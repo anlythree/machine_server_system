@@ -5,6 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import top.anly.business.machine.service.impl.MachineDescServiceImpl;
 
 /**
  * 启动类
@@ -21,6 +22,8 @@ public class MachineServerSystemApplication {
     public static void main(String[] args) {
         SpringApplication.run(MachineServerSystemApplication.class, args);
         System.out.println("hj项目启动成功！！！");
+        // 缓存设备信息到内存的map中
+        new MachineDescServiceImpl().cacheMachineInfo();
     }
 
 }

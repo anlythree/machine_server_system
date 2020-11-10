@@ -21,8 +21,9 @@ public class MachineRecordJsonModel {
 
     private Integer machineStatus;
 
-
-    public MachineRecordJsonModel machineRecordJsonModel(MqttMessage mqttMessage) {
-        return JSONObject.parseObject(mqttMessage.toString(), MachineRecordJsonModel.class);
+    public MachineRecordJsonModel(MqttMessage mqttMessage) {
+        MachineRecordJsonModel machineRecordJsonModel = JSONObject.parseObject(mqttMessage.toString(), MachineRecordJsonModel.class);
+        this.time = machineRecordJsonModel.time;
+        this.machineStatus = machineRecordJsonModel.machineStatus;
     }
 }

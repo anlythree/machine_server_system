@@ -4,6 +4,7 @@ package top.anly.common.mqtt;
 import lombok.extern.slf4j.Slf4j;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.springframework.transaction.annotation.Transactional;
+import top.anly.business.machine.service.MachineDescService;
 import top.anly.common.util.SpringContextBeanService;
 
 /**
@@ -15,13 +16,15 @@ import top.anly.common.util.SpringContextBeanService;
 @Slf4j
 public class MessageThread implements Runnable {
 
-    private final String MACHINE_TOPIC = "anly/machine/";
+    public static final String MACHINE_TOPIC = "anly/machine/";
 
     private String topic;
 
     private volatile MqttMessage message;
 
     private MqttConnect mqttConnect;
+
+    private MachineDescService machineDescService;
 
 
     /**
@@ -34,6 +37,7 @@ public class MessageThread implements Runnable {
         this.topic = topic;
         this.message = message;
         this.mqttConnect = SpringContextBeanService.getBean(MqttConnect.class);
+        this.machineDescService = SpringContextBeanService.getBean(MachineDescService.class);
     }
 
     /**
@@ -45,11 +49,11 @@ public class MessageThread implements Runnable {
     @Transactional(readOnly = false, rollbackFor = Exception.class)
     @Override
     public void run() {
-        // subscribe后得到的消息会执行到这里面
+        // 订阅的消息
         synchronized (message) {
             if(topic.startsWith(MACHINE_TOPIC)){
-                // 电脑横机数据采集信息
-
+                // 数据处理
+                machineDescService.record(message,topic);
             }
         }
     }
