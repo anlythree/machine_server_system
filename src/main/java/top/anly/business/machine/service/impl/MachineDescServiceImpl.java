@@ -34,13 +34,16 @@ public class MachineDescServiceImpl extends ServiceImpl<MachineDescDao,MachineDe
      */
     private static Map<String, LocalDateTime> machineDescMap = new HashMap<>();
 
-
     @Resource
     private MachineDescDao machineDescDao;
 
     @Override
     @Transactional(rollbackFor = Exception.class)
     public synchronized void record(MqttMessage mqttMessage,String topic){
+        // 全局设备状态对象
+        MachineDesc machineDesc = new MachineDesc();
+        // 全局log对象
+
         // 解析消息中的电脑横机信息
         // 电脑横机数据采集信息
         MachineRecordJsonModel machineRecordJsonModel = new MachineRecordJsonModel(mqttMessage);
@@ -90,6 +93,17 @@ public class MachineDescServiceImpl extends ServiceImpl<MachineDescDao,MachineDe
                 log.info("暂停->关机");
             }else if(MachineDescStatusEnum.ERROR.getStatusNum().equals(machineRecordJsonModel.getMachineStatus())){
                 log.info("暂停->报警");
+            }else {
+                log.error(machineName+"当前的状态码不识别:"+machineRecordJsonModel.getMachineStatus());
+            }
+        }else if(MachineDescStatusEnum.ERROR.getStatusNum().equals(machineDescOld.getMachineStatus())){
+            // 之前为报警状态
+            if(MachineDescStatusEnum.RUN.getStatusNum().equals(machineRecordJsonModel.getMachineStatus())){
+                log.info("报警->运行");
+            }else if(MachineDescStatusEnum.CLOSE.getStatusNum().equals(machineRecordJsonModel.getMachineStatus())){
+                log.info("报警->关机");
+            }else if(MachineDescStatusEnum.STOP.getStatusNum().equals(machineRecordJsonModel.getMachineStatus())){
+                log.info("报警->暂停");
             }else {
                 log.error(machineName+"当前的状态码不识别:"+machineRecordJsonModel.getMachineStatus());
             }
