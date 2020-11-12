@@ -22,8 +22,6 @@ public class MachineServerSystemApplication {
     public static void main(String[] args) {
         SpringApplication.run(MachineServerSystemApplication.class, args);
         System.out.println("hj项目启动成功！！！");
-        // 缓存设备信息到内存的map中
-        new MachineDescServiceImpl().cacheMachineInfo();
     }
 
 }

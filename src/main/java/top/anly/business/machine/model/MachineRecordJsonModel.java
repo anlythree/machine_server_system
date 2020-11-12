@@ -17,13 +17,10 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class MachineRecordJsonModel {
 
-    private LocalDateTime time;
-
     private Integer machineStatus;
 
     public MachineRecordJsonModel(MqttMessage mqttMessage) {
         MachineRecordJsonModel machineRecordJsonModel = JSONObject.parseObject(mqttMessage.toString(), MachineRecordJsonModel.class);
-        this.time = machineRecordJsonModel.time;
         this.machineStatus = machineRecordJsonModel.machineStatus;
     }
 }

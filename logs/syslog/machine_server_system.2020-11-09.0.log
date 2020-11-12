@@ -1,0 +1,96 @@
+2020-11-09 16:56:02,453 INFO (StartupInfoLogger.java:50)- Starting MachineServerSystemApplication on DESKTOP-ANC07SR with PID 12680 (F:\my\machine_server_system\target\classes started by 24501 in F:\my\machine_server_system)
+2020-11-09 16:56:02,457 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-11-09 16:56:02,874 WARN (Logger.java:44)- No MyBatis mapper was found in '[top.anly.business.*.dao]' package. Please check your configuration.
+2020-11-09 16:56:02,988 WARN (Logger.java:44)- No MyBatis mapper was found in '[top.anly]' package. Please check your configuration.
+2020-11-09 16:56:03,518 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8333 (http)
+2020-11-09 16:56:03,530 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8333"]
+2020-11-09 16:56:03,537 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-11-09 16:56:03,537 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-11-09 16:56:03,543 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [G:\jdk1.8.0_192\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;G:\jdk1.8.0_192\bin;G:\jdk1.8.0_192\jre\bin;G:\Git\cmd;G:\Git\bin;G:\Git\mingw64\libexec\git-core;G:\nodejs\;C:\Program Files\nodejs\node_global;G:\maven\apache-maven-3.6.3\bin;G:\gradle-6.5.1\bin;G:\redis\;C:\Users\24501\AppData\Local\Microsoft\WindowsApps;;G:\Microsoft VS Code\bin;C:\Users\24501\AppData\Roaming\npm;G:\fiddler;.]
+2020-11-09 16:56:03,664 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-11-09 16:56:03,665 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1161 ms
+2020-11-09 16:56:03,848 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 16:56:04,155 INFO (DruidDataSource.java:914)- {dataSource-1} inited
+2020-11-09 16:56:04,740 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8333"]
+2020-11-09 16:56:04,764 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8333 (http) with context path ''
+2020-11-09 16:56:04,766 INFO (StartupInfoLogger.java:59)- Started MachineServerSystemApplication in 2.748 seconds (JVM running for 3.97)
+2020-11-09 16:57:18,884 INFO (DruidDataSource.java:1689)- {dataSource-1} closed
+2020-11-09 16:57:18,884 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 16:57:34,433 INFO (StartupInfoLogger.java:50)- Starting MachineServerSystemApplication on DESKTOP-ANC07SR with PID 7700 (F:\my\machine_server_system\target\classes started by 24501 in F:\my\machine_server_system)
+2020-11-09 16:57:34,436 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-11-09 16:57:34,824 WARN (Logger.java:44)- No MyBatis mapper was found in '[top.anly.business.*.dao]' package. Please check your configuration.
+2020-11-09 16:57:34,931 WARN (Logger.java:44)- No MyBatis mapper was found in '[top.anly]' package. Please check your configuration.
+2020-11-09 16:57:35,565 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8333 (http)
+2020-11-09 16:57:35,581 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8333"]
+2020-11-09 16:57:35,589 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-11-09 16:57:35,590 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-11-09 16:57:35,596 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [G:\jdk1.8.0_192\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;G:\jdk1.8.0_192\bin;G:\jdk1.8.0_192\jre\bin;G:\Git\cmd;G:\Git\bin;G:\Git\mingw64\libexec\git-core;G:\nodejs\;C:\Program Files\nodejs\node_global;G:\maven\apache-maven-3.6.3\bin;G:\gradle-6.5.1\bin;G:\redis\;C:\Users\24501\AppData\Local\Microsoft\WindowsApps;;G:\Microsoft VS Code\bin;C:\Users\24501\AppData\Roaming\npm;G:\fiddler;.]
+2020-11-09 16:57:35,727 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-11-09 16:57:35,727 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1248 ms
+2020-11-09 16:57:35,914 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 16:57:36,199 INFO (DruidDataSource.java:914)- {dataSource-1} inited
+2020-11-09 16:57:36,815 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8333"]
+2020-11-09 16:57:36,842 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8333 (http) with context path ''
+2020-11-09 16:57:36,846 INFO (StartupInfoLogger.java:59)- Started MachineServerSystemApplication in 2.766 seconds (JVM running for 4.011)
+2020-11-09 17:26:30,344 INFO (DruidDataSource.java:1689)- {dataSource-1} closed
+2020-11-09 17:26:30,344 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 17:39:52,487 INFO (StartupInfoLogger.java:50)- Starting MachineServerSystemApplication on DESKTOP-ANC07SR with PID 15792 (F:\my\machine_server_system\target\classes started by 24501 in F:\my\machine_server_system)
+2020-11-09 17:39:52,491 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-11-09 17:39:53,493 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8333 (http)
+2020-11-09 17:39:53,504 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8333"]
+2020-11-09 17:39:53,511 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-11-09 17:39:53,511 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-11-09 17:39:53,517 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [G:\jdk1.8.0_192\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;G:\jdk1.8.0_192\bin;G:\jdk1.8.0_192\jre\bin;G:\Git\cmd;G:\Git\bin;G:\Git\mingw64\libexec\git-core;G:\nodejs\;C:\Program Files\nodejs\node_global;G:\maven\apache-maven-3.6.3\bin;G:\gradle-6.5.1\bin;G:\redis\;C:\Users\24501\AppData\Local\Microsoft\WindowsApps;;G:\Microsoft VS Code\bin;C:\Users\24501\AppData\Roaming\npm;G:\fiddler;.]
+2020-11-09 17:39:53,636 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-11-09 17:39:53,637 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1095 ms
+2020-11-09 17:39:53,900 INFO (DruidDataSource.java:914)- {dataSource-1} inited
+2020-11-09 17:39:54,719 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 17:39:54,881 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8333"]
+2020-11-09 17:39:54,904 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8333 (http) with context path ''
+2020-11-09 17:39:54,907 INFO (StartupInfoLogger.java:59)- Started MachineServerSystemApplication in 2.786 seconds (JVM running for 3.995)
+2020-11-09 17:40:05,786 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 17:40:05,789 INFO (DruidDataSource.java:1689)- {dataSource-1} closed
+2020-11-09 17:41:32,314 INFO (StartupInfoLogger.java:50)- Starting MachineServerSystemApplication on DESKTOP-ANC07SR with PID 16532 (F:\my\machine_server_system\target\classes started by 24501 in F:\my\machine_server_system)
+2020-11-09 17:41:32,317 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-11-09 17:41:33,277 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8333 (http)
+2020-11-09 17:41:33,288 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8333"]
+2020-11-09 17:41:33,295 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-11-09 17:41:33,295 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-11-09 17:41:33,301 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [G:\jdk1.8.0_192\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;G:\jdk1.8.0_192\bin;G:\jdk1.8.0_192\jre\bin;G:\Git\cmd;G:\Git\bin;G:\Git\mingw64\libexec\git-core;G:\nodejs\;C:\Program Files\nodejs\node_global;G:\maven\apache-maven-3.6.3\bin;G:\gradle-6.5.1\bin;G:\redis\;C:\Users\24501\AppData\Local\Microsoft\WindowsApps;;G:\Microsoft VS Code\bin;C:\Users\24501\AppData\Roaming\npm;G:\fiddler;.]
+2020-11-09 17:41:33,418 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-11-09 17:41:33,419 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1061 ms
+2020-11-09 17:41:33,668 INFO (DruidDataSource.java:914)- {dataSource-1} inited
+2020-11-09 17:41:34,551 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 17:41:34,715 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8333"]
+2020-11-09 17:41:34,740 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8333 (http) with context path ''
+2020-11-09 17:41:34,743 INFO (StartupInfoLogger.java:59)- Started MachineServerSystemApplication in 2.796 seconds (JVM running for 3.875)
+2020-11-09 17:41:41,553 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 17:41:41,556 INFO (DruidDataSource.java:1689)- {dataSource-1} closed
+2020-11-09 17:55:35,794 INFO (StartupInfoLogger.java:50)- Starting MachineServerSystemApplication on DESKTOP-ANC07SR with PID 19232 (F:\my\machine_server_system\target\classes started by 24501 in F:\my\machine_server_system)
+2020-11-09 17:55:35,798 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-11-09 17:55:36,760 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8001 (http)
+2020-11-09 17:55:36,771 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-09 17:55:36,777 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-11-09 17:55:36,777 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-11-09 17:55:36,784 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [G:\jdk1.8.0_192\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;G:\jdk1.8.0_192\bin;G:\jdk1.8.0_192\jre\bin;G:\Git\cmd;G:\Git\bin;G:\Git\mingw64\libexec\git-core;G:\nodejs\;C:\Program Files\nodejs\node_global;G:\maven\apache-maven-3.6.3\bin;G:\gradle-6.5.1\bin;G:\redis\;C:\Users\24501\AppData\Local\Microsoft\WindowsApps;;G:\Microsoft VS Code\bin;C:\Users\24501\AppData\Roaming\npm;G:\fiddler;.]
+2020-11-09 17:55:36,902 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-11-09 17:55:36,902 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1064 ms
+2020-11-09 17:55:37,159 INFO (DruidDataSource.java:914)- {dataSource-1} inited
+2020-11-09 17:56:24,723 INFO (StartupInfoLogger.java:50)- Starting MachineServerSystemApplication on DESKTOP-ANC07SR with PID 19608 (F:\my\machine_server_system\target\classes started by 24501 in F:\my\machine_server_system)
+2020-11-09 17:56:24,726 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-11-09 17:56:25,703 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8001 (http)
+2020-11-09 17:56:25,715 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-09 17:56:25,722 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-11-09 17:56:25,723 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-11-09 17:56:25,728 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [G:\jdk1.8.0_192\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;G:\jdk1.8.0_192\bin;G:\jdk1.8.0_192\jre\bin;G:\Git\cmd;G:\Git\bin;G:\Git\mingw64\libexec\git-core;G:\nodejs\;C:\Program Files\nodejs\node_global;G:\maven\apache-maven-3.6.3\bin;G:\gradle-6.5.1\bin;G:\redis\;C:\Users\24501\AppData\Local\Microsoft\WindowsApps;;G:\Microsoft VS Code\bin;C:\Users\24501\AppData\Roaming\npm;G:\fiddler;.]
+2020-11-09 17:56:25,846 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-11-09 17:56:25,846 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1080 ms
+2020-11-09 17:56:26,100 INFO (DruidDataSource.java:914)- {dataSource-1} inited
+2020-11-09 17:56:26,916 WARN (MqttConnect.java:56)- MQTT服务器连接成功-----------
+2020-11-09 17:56:26,974 WARN (MqttConnect.java:60)- ------订阅成功anly/machine/#
+2020-11-09 17:56:27,094 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 17:56:27,257 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8001"]
+2020-11-09 17:56:27,283 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-09 17:56:27,286 INFO (StartupInfoLogger.java:59)- Started MachineServerSystemApplication in 2.92 seconds (JVM running for 3.976)
+2020-11-09 17:56:39,147 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 17:56:39,150 INFO (DruidDataSource.java:1689)- {dataSource-1} closed

@@ -51,9 +51,9 @@ public class MessageThread implements Runnable {
     public void run() {
         // 订阅的消息
         synchronized (message) {
-            if(topic.startsWith(MACHINE_TOPIC)){
+            if (topic.startsWith(MACHINE_TOPIC)) {
                 // 数据处理
-                machineDescService.record(message,topic);
+                machineDescService.record(message, topic);
             }
         }
     }

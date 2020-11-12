@@ -8,13 +8,13 @@ package top.anly.business.machine.enums;
 public enum MachineDescStatusEnum {
 
     /**
-     * 关闭，开始运行，停止，错误
+     * 关机状态，运行状态，暂停，报警, 离线
      */
-    CLOSE(0,"close"),
-    RUN(1,"run"),
-    STOP(2,"stop"),
-    ERROR(3,"error"),
-    DOWN(4,"down");
+    SHUT_DOWN(0,"shut_down","关机状态"),
+    RUNNING(1,"run","运行状态"),
+    PENDING(2,"pending","暂停"),
+    ERROR(3,"error","报警"),
+    NOT_ONLINE(4,"not_online","离线");
 
     /**
      * 状态码
@@ -26,9 +26,15 @@ public enum MachineDescStatusEnum {
      */
     private String statusCode;
 
-    MachineDescStatusEnum(Integer statusNo, String statusCode) {
-        this.statusNum = statusNo;
+    /**
+     * 状态中文说明
+     */
+    private String statusMessage;
+
+    MachineDescStatusEnum(Integer statusNum, String statusCode, String statusMessage) {
+        this.statusNum = statusNum;
         this.statusCode = statusCode;
+        this.statusMessage = statusMessage;
     }
 
     public Integer getStatusNum() {
@@ -45,5 +51,13 @@ public enum MachineDescStatusEnum {
 
     public void setStatusCode(String statusCode) {
         this.statusCode = statusCode;
+    }
+
+    public String getStatusMessage() {
+        return statusMessage;
+    }
+
+    public void setStatusMessage(String statusMessage) {
+        this.statusMessage = statusMessage;
     }
 }
