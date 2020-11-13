@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
+import org.slf4j.Logger;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import top.anly.business.log.service.LogDescService;
@@ -233,4 +234,16 @@ public class MachineDescServiceImpl extends ServiceImpl<MachineDescDao,MachineDe
         cacheMachineInfo();
         return machineDescMap;
     }
+
+    @Override
+    public Map<String, MachineStatusModel> getMachineDescMap() {
+        return machineDescMap;
+    }
+
+    @Override
+    public void setMachineDescMap(String key, MachineStatusModel value) {
+        machineDescMap.put(key,value);
+    }
+
+
 }

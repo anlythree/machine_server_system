@@ -1,5 +1,6 @@
 package top.anly.business.machine.service;
 
+import com.baomidou.mybatisplus.extension.service.IService;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 import top.anly.business.machine.domain.MachineDesc;
 import top.anly.business.machine.model.MachineStatusModel;
@@ -11,7 +12,7 @@ import java.util.Map;
  * @author anlythree
  * @date 2020/11/9 17:14
  */
-public interface MachineDescService {
+public interface MachineDescService extends IService<MachineDesc> {
 
     /**
      * 接受esp8266的mqtt消息
@@ -51,5 +52,19 @@ public interface MachineDescService {
      * @return
      */
     Map<String, MachineStatusModel> manualCacheMachineInfo();
+
+    /**
+     * 查询缓存的设备信息
+     * @return
+     */
+    Map<String, MachineStatusModel> getMachineDescMap();
+
+    /**
+     * 更新缓存
+     * @param key
+     * @param value
+     * @return
+     */
+    void setMachineDescMap(String key,MachineStatusModel value);
 
 }
