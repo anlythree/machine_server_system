@@ -6,8 +6,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 
-import java.time.LocalDateTime;
-
 /**
  * @author wangli
  * @date 2020/11/9 17:25

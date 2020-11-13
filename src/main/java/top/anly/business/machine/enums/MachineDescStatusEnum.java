@@ -37,6 +37,24 @@ public enum MachineDescStatusEnum {
         this.statusMessage = statusMessage;
     }
 
+
+    /**
+     * 根据数字编码（statusNum）查询枚举
+     *
+     * @param statusNum
+     * @return
+     */
+    public static MachineDescStatusEnum getMsgByCode(Integer statusNum) {
+        if (statusNum != null) {
+            for (MachineDescStatusEnum one : MachineDescStatusEnum.values()) {
+                if (one.getStatusNum().equals(statusNum)) {
+                    return one;
+                }
+            }
+        }
+        return null;
+    }
+
     public Integer getStatusNum() {
         return statusNum;
     }
@@ -60,4 +78,7 @@ public enum MachineDescStatusEnum {
     public void setStatusMessage(String statusMessage) {
         this.statusMessage = statusMessage;
     }
+
+
+
 }

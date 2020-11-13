@@ -10,6 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import top.anly.business.machine.dao.MachineDescDao;
 import top.anly.business.machine.domain.MachineDesc;
 import top.anly.business.machine.enums.MachineDescStatusEnum;
+import top.anly.business.machine.model.MachineModel;
 import top.anly.business.machine.model.MachineRecordJsonModel;
 import top.anly.business.machine.model.MachineStatusModel;
 import top.anly.business.machine.service.MachineDescService;
@@ -55,59 +56,116 @@ public class MachineDescServiceImpl extends ServiceImpl<MachineDescDao,MachineDe
         }
         //查询之前的状态
         MachineDesc machineDescOld = getMachineDescByName(machineName);
+        if(null == machineDescOld){
+            // 查询不到机器设备名称就提示app端该设备未维护基本信息
+            // todo-anly
+
+        }
         // 全局设备模型对象
         if(MachineDescStatusEnum.NOT_ONLINE.getStatusNum().equals(machineDescOld.getMachineStatus())){
             // 如果之前宕机了，那么先把状态改成关机状态
             machineDescOld.setMachineStatus(MachineDescStatusEnum.SHUT_DOWN.getStatusNum());
             machineDescOld.setGmtModified(LocalDateTime.now());
         }
-        if(MachineDescStatusEnum.RUNNING.getStatusNum().equals(machineDescOld.getMachineStatus())){
+        // 记录相关动作
+        takeNotes(machineRecordJsonModel, machineDescOld);
+    }
+
+    /**
+     * 记录相关动作
+     * @param machineRecordJsonModel
+     * @param machineDescOld
+     */
+    private void takeNotes(MachineRecordJsonModel machineRecordJsonModel, MachineDesc machineDescOld) {
+        // 横机设备操作模型初始化
+        MachineModel machineModel = null;
+        String machineName = machineDescOld.getMachineName();
+        if(MachineDescStatusEnum.RUNNING.getStatusNum().equals(machineRecordJsonModel.getMachineStatus())){
             // 之前为运行状态
             if(MachineDescStatusEnum.SHUT_DOWN.getStatusNum().equals(machineRecordJsonModel.getMachineStatus())){
+                // 停止运行+关机
+                machineModel = new MachineModel(machineDescOld)
+                        .stopRun()
+                        .closeMachine();
                 log.info("运行->关机");
             }else if(MachineDescStatusEnum.PENDING.getStatusNum().equals(machineRecordJsonModel.getMachineStatus())){
+                // 结束运行
+                machineModel = new MachineModel()
+                        .stopRun();
                 log.info("运行->暂停");
             }else if(MachineDescStatusEnum.ERROR.getStatusNum().equals(machineRecordJsonModel.getMachineStatus())){
+                // 结束运行+开始报警
+                machineModel = new MachineModel()
+                        .stopRun()
+                        .startError();
                 log.info("运行->报警");
-            }else {
-                log.error(machineName+"当前的状态码不识别:"+machineRecordJsonModel.getMachineStatus());
             }
         }else if(MachineDescStatusEnum.SHUT_DOWN.getStatusNum().equals(machineDescOld.getMachineStatus())){
             // 之前为关闭状态
             if(MachineDescStatusEnum.RUNNING.getStatusNum().equals(machineRecordJsonModel.getMachineStatus())){
+                // 开机+开始运行
+                machineModel = new MachineModel()
+                        .openMachine()
+                        .startRun();
                 log.info("关机->运行");
             }else if(MachineDescStatusEnum.PENDING.getStatusNum().equals(machineRecordJsonModel.getMachineStatus())){
+                // 开机
+                machineModel = new MachineModel()
+                        .openMachine();
                 log.info("关机->暂停");
             }else if(MachineDescStatusEnum.ERROR.getStatusNum().equals(machineRecordJsonModel.getMachineStatus())){
+                // 开机+开始报警
+                machineModel = new MachineModel()
+                        .openMachine()
+                        .startError();
                 log.info("关机->报警");
-            }else {
-                log.error(machineName+"当前的状态码不识别:"+machineRecordJsonModel.getMachineStatus());
             }
         }else if(MachineDescStatusEnum.PENDING.getStatusNum().equals(machineDescOld.getMachineStatus())){
             // 之前为暂停状态
             if(MachineDescStatusEnum.RUNNING.getStatusNum().equals(machineRecordJsonModel.getMachineStatus())){
+                // 开始运行
+                machineModel = new MachineModel()
+                        .startRun();
                 log.info("暂停->运行");
             }else if(MachineDescStatusEnum.SHUT_DOWN.getStatusNum().equals(machineRecordJsonModel.getMachineStatus())){
+                // 关机
+                machineModel = new MachineModel()
+                        .closeMachine();
                 log.info("暂停->关机");
             }else if(MachineDescStatusEnum.ERROR.getStatusNum().equals(machineRecordJsonModel.getMachineStatus())){
+                // 开始报警
+                machineModel = new MachineModel()
+                        .startError();
                 log.info("暂停->报警");
-            }else {
-                log.error(machineName+"当前的状态码不识别:"+machineRecordJsonModel.getMachineStatus());
             }
         }else if(MachineDescStatusEnum.ERROR.getStatusNum().equals(machineDescOld.getMachineStatus())){
             // 之前为报警状态
             if(MachineDescStatusEnum.RUNNING.getStatusNum().equals(machineRecordJsonModel.getMachineStatus())){
+                // 停止报警+开始运行
+                machineModel = new MachineModel()
+                        .stopError()
+                        .startRun();
                 log.info("报警->运行");
             }else if(MachineDescStatusEnum.SHUT_DOWN.getStatusNum().equals(machineRecordJsonModel.getMachineStatus())){
+                // 停止报警+关机
+                machineModel = new MachineModel()
+                        .stopError()
+                        .closeMachine();
                 log.info("报警->关机");
             }else if(MachineDescStatusEnum.PENDING.getStatusNum().equals(machineRecordJsonModel.getMachineStatus())){
+                // 停止报警
+                machineModel = new MachineModel()
+                        .stopError();
                 log.info("报警->暂停");
-            }else {
-                log.error(machineName+"当前的状态码不识别:"+machineRecordJsonModel.getMachineStatus());
             }
-        }else {
-            log.error("查询"+machineName+"之前的状态,不识别的设备状态码:"+machineDescOld.getMachineStatus());
         }
+
+        if(null == machineModel){
+            // todo-anly 发送异常信息给app端
+            log.error(machineName+"当前的状态码不识别:"+machineRecordJsonModel.getMachineStatus());
+        }
+        // todo-anly 持久化数据
+
     }
 
     /**
