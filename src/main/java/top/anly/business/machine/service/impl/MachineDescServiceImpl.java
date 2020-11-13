@@ -200,8 +200,9 @@ public class MachineDescServiceImpl extends ServiceImpl<MachineDescDao, MachineD
 
     /**
      * 持久化数据
+     * @param machineModel
      */
-    public void persistence(MachineModel machineModel) {
+    private void persistence(MachineModel machineModel) {
         // 更新数据库中的数据
         // 1、更新库中设备状态
         updateById(machineModel.getMachineDesc());
@@ -219,7 +220,6 @@ public class MachineDescServiceImpl extends ServiceImpl<MachineDescDao, MachineD
 
     /**
      * 直接更新心跳刷新时间
-     *
      * @param machineName
      */
     private void refreshHeartTime(String machineName) {
