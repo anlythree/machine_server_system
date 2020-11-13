@@ -976,3 +976,87 @@ Caused by: org.postgresql.util.PSQLException: ERROR: syntax error at or near ")"
 2020-11-13 12:44:12,365 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'taskScheduler'
 2020-11-13 12:44:12,366 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
 2020-11-13 12:44:12,369 INFO (DruidDataSource.java:1689)- {dataSource-1} closed
+2020-11-13 13:36:14,519 INFO (StartupInfoLogger.java:50)- Starting MachineServerSystemApplication on DESKTOP-ANC07SR with PID 12424 (F:\my\machine_server_system\target\classes started by 24501 in F:\my\machine_server_system)
+2020-11-13 13:36:14,523 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-11-13 13:36:15,602 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$76083b8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-13 13:36:15,875 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8001 (http)
+2020-11-13 13:36:15,886 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-13 13:36:15,893 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-11-13 13:36:15,894 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-11-13 13:36:15,900 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [G:\jdk1.8.0_192\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;G:\jdk1.8.0_192\bin;G:\jdk1.8.0_192\jre\bin;G:\Git\cmd;G:\Git\bin;G:\Git\mingw64\libexec\git-core;G:\nodejs\;C:\Program Files\nodejs\node_global;G:\maven\apache-maven-3.6.3\bin;G:\gradle-6.5.1\bin;G:\redis\;C:\Users\24501\AppData\Local\Microsoft\WindowsApps;;G:\Microsoft VS Code\bin;C:\Users\24501\AppData\Roaming\npm;G:\fiddler;.]
+2020-11-13 13:36:16,024 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-11-13 13:36:16,024 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1454 ms
+2020-11-13 13:36:16,271 INFO (DruidDataSource.java:914)- {dataSource-1} inited
+2020-11-13 13:36:17,259 WARN (MqttConnect.java:56)- ------MQTT服务器连接成功
+2020-11-13 13:36:17,322 WARN (MqttConnect.java:59)- ------开始订阅主题:anly/machine/#
+2020-11-13 13:36:17,570 INFO (PropertySourcedRequestMappingHandlerMapping.java:69)- Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-11-13 13:36:17,702 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-13 13:36:17,859 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'taskScheduler'
+2020-11-13 13:36:17,906 INFO (DocumentationPluginsBootstrapper.java:160)- Context refreshed
+2020-11-13 13:36:17,929 INFO (DocumentationPluginsBootstrapper.java:163)- Found 1 custom documentation plugin(s)
+2020-11-13 13:36:17,965 INFO (ApiListingReferenceScanner.java:41)- Scanning for api listing references
+2020-11-13 13:36:18,102 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8001"]
+2020-11-13 13:36:18,129 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-13 13:36:18,133 INFO (StartupInfoLogger.java:59)- Started MachineServerSystemApplication in 3.986 seconds (JVM running for 5.142)
+2020-11-13 13:36:18,202 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-13 13:36:18,202 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2020-11-13 13:36:18,209 INFO (FrameworkServlet.java:546)- Completed initialization in 6 ms
+2020-11-13 13:36:18,279 INFO (MachineDescServiceImpl.java:218)- 所有设备信息已缓存至map中
+2020-11-13 13:36:18,280 INFO (MachineDescServiceImpl.java:219)- map内容:{南左=MachineStatusModel(machineStatus=4, lastHeartTime=2020-11-13T13:36:18.279), 北左=MachineStatusModel(machineStatus=4, lastHeartTime=2020-11-13T13:36:18.279), 南右=MachineStatusModel(machineStatus=4, lastHeartTime=2020-11-13T13:36:18.279), 北右=MachineStatusModel(machineStatus=4, lastHeartTime=2020-11-13T13:36:18.279)}
+2020-11-13 13:36:20,007 INFO (InitializeTask.java:40)- 机械设备离线心跳检查
+2020-11-13 13:36:25,001 INFO (InitializeTask.java:40)- 机械设备离线心跳检查
+2020-11-13 13:36:25,085 INFO (InitializeTask.java:61)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-13 13:36:30,002 INFO (InitializeTask.java:40)- 机械设备离线心跳检查
+2020-11-13 13:36:30,062 INFO (InitializeTask.java:61)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-13 13:36:35,002 INFO (InitializeTask.java:40)- 机械设备离线心跳检查
+2020-11-13 13:36:35,064 INFO (InitializeTask.java:61)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-13 13:36:40,002 INFO (InitializeTask.java:40)- 机械设备离线心跳检查
+2020-11-13 13:36:40,063 INFO (InitializeTask.java:61)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-13 13:36:45,002 INFO (InitializeTask.java:40)- 机械设备离线心跳检查
+2020-11-13 13:36:45,062 INFO (InitializeTask.java:61)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-13 13:36:50,001 INFO (InitializeTask.java:40)- 机械设备离线心跳检查
+2020-11-13 13:36:50,063 INFO (InitializeTask.java:61)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-13 13:36:55,002 INFO (InitializeTask.java:40)- 机械设备离线心跳检查
+2020-11-13 13:36:55,101 INFO (InitializeTask.java:61)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-13 13:37:00,001 INFO (InitializeTask.java:40)- 机械设备离线心跳检查
+2020-11-13 13:37:00,062 INFO (InitializeTask.java:61)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-13 13:37:05,002 INFO (InitializeTask.java:40)- 机械设备离线心跳检查
+2020-11-13 13:37:05,062 INFO (InitializeTask.java:61)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-13 13:37:10,011 INFO (InitializeTask.java:40)- 机械设备离线心跳检查
+2020-11-13 13:37:10,081 INFO (InitializeTask.java:61)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-13 13:37:12,053 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'taskScheduler'
+2020-11-13 13:37:12,055 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-13 13:37:12,057 INFO (DruidDataSource.java:1689)- {dataSource-1} closed
+2020-11-13 13:37:16,861 INFO (StartupInfoLogger.java:50)- Starting MachineServerSystemApplication on DESKTOP-ANC07SR with PID 1740 (F:\my\machine_server_system\target\classes started by 24501 in F:\my\machine_server_system)
+2020-11-13 13:37:16,864 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-11-13 13:37:17,819 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$846e707b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-13 13:37:18,075 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8001 (http)
+2020-11-13 13:37:18,087 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-13 13:37:18,092 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-11-13 13:37:18,093 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-11-13 13:37:18,098 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [G:\jdk1.8.0_192\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;G:\jdk1.8.0_192\bin;G:\jdk1.8.0_192\jre\bin;G:\Git\cmd;G:\Git\bin;G:\Git\mingw64\libexec\git-core;G:\nodejs\;C:\Program Files\nodejs\node_global;G:\maven\apache-maven-3.6.3\bin;G:\gradle-6.5.1\bin;G:\redis\;C:\Users\24501\AppData\Local\Microsoft\WindowsApps;;G:\Microsoft VS Code\bin;C:\Users\24501\AppData\Roaming\npm;G:\fiddler;.]
+2020-11-13 13:37:18,209 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-11-13 13:37:18,209 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1304 ms
+2020-11-13 13:37:18,441 INFO (DruidDataSource.java:914)- {dataSource-1} inited
+2020-11-13 13:37:19,464 WARN (MqttConnect.java:56)- ------MQTT服务器连接成功
+2020-11-13 13:37:19,524 WARN (MqttConnect.java:59)- ------开始订阅主题:anly/machine/#
+2020-11-13 13:37:19,764 INFO (PropertySourcedRequestMappingHandlerMapping.java:69)- Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-11-13 13:37:19,872 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-13 13:37:19,997 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'taskScheduler'
+2020-11-13 13:37:20,047 INFO (DocumentationPluginsBootstrapper.java:160)- Context refreshed
+2020-11-13 13:37:20,064 INFO (DocumentationPluginsBootstrapper.java:163)- Found 1 custom documentation plugin(s)
+2020-11-13 13:37:20,092 INFO (ApiListingReferenceScanner.java:41)- Scanning for api listing references
+2020-11-13 13:37:20,216 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8001"]
+2020-11-13 13:37:20,241 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-13 13:37:20,244 INFO (StartupInfoLogger.java:59)- Started MachineServerSystemApplication in 3.721 seconds (JVM running for 4.786)
+2020-11-13 13:37:20,369 INFO (MachineDescServiceImpl.java:218)- 所有设备信息已缓存至map中
+2020-11-13 13:37:20,369 INFO (MachineDescServiceImpl.java:219)- map内容:{南左=MachineStatusModel(machineStatus=4, lastHeartTime=2020-11-13T13:37:20.369), 北左=MachineStatusModel(machineStatus=4, lastHeartTime=2020-11-13T13:37:20.369), 南右=MachineStatusModel(machineStatus=4, lastHeartTime=2020-11-13T13:37:20.369), 北右=MachineStatusModel(machineStatus=4, lastHeartTime=2020-11-13T13:37:20.369)}
+2020-11-13 13:37:30,008 INFO (InitializeTask.java:40)- 机械设备离线心跳检查
+2020-11-13 13:37:30,100 INFO (InitializeTask.java:61)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-13 13:37:40,001 INFO (InitializeTask.java:40)- 机械设备离线心跳检查
+2020-11-13 13:37:40,067 INFO (InitializeTask.java:61)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-13 13:37:50,001 INFO (InitializeTask.java:40)- 机械设备离线心跳检查
+2020-11-13 13:37:50,064 INFO (InitializeTask.java:61)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-13 13:37:58,925 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'taskScheduler'
+2020-11-13 13:37:58,926 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-13 13:37:58,928 INFO (DruidDataSource.java:1689)- {dataSource-1} closed

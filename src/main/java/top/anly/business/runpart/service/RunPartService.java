@@ -8,4 +8,11 @@ import top.anly.business.runpart.domain.RunPart;
  * @date 2020/11/11 10:39
  */
 public interface RunPartService extends IService<RunPart> {
+
+    /**
+     * 根据机器名称查询未关闭运行时间段
+     * @param machineName
+     * @return
+     */
+    RunPart getNotCloseRunPart(String machineName);
 }

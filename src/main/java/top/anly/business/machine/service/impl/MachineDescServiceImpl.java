@@ -163,9 +163,34 @@ public class MachineDescServiceImpl extends ServiceImpl<MachineDescDao,MachineDe
                         .stopError();
                 log.info("报警->暂停");
             }
+        }else if(MachineDescStatusEnum.NOT_ONLINE.getStatusNum().equals(machineDescOld.getMachineStatus())){
+            // 之前为离线状态
+            if(MachineDescStatusEnum.RUNNING.getStatusNum().equals(machineRecordJsonModel.getMachineStatus())){
+                // 上线+开始运行
+                machineModel = new MachineModel()
+                        .openMachine()
+                        .startRun();
+                log.info("离线->运行");
+            }else if(MachineDescStatusEnum.SHUT_DOWN.getStatusNum().equals(machineRecordJsonModel.getMachineStatus())){
+                // 关机
+                machineModel = new MachineModel()
+                        .closeMachine();
+                log.info("离线->关机");
+            }else if(MachineDescStatusEnum.PENDING.getStatusNum().equals(machineRecordJsonModel.getMachineStatus())){
+                // 开机
+                machineModel = new MachineModel()
+                        .openMachine();
+                log.info("离线->暂停");
+            }else if(MachineDescStatusEnum.ERROR.getStatusNum().equals(machineRecordJsonModel.getMachineStatus())){
+                // 开机+报警
+                machineModel = new MachineModel()
+                        .openMachine()
+                        .startError();
+                log.info("离线->报警");
+            }
         }
-
         if(null == machineModel){
+            // 无法判断电脑横机动作
             // todo-anly 发送异常信息给app端
             log.error(machineName+"当前的状态码不识别:"+machineRecordJsonModel.getMachineStatus());
             return;
