@@ -10,7 +10,7 @@ import top.anly.common.util.SpringContextBeanService;
 /**
  * 线程类处理数采数据
  *
- * @author wangli
+ * @author anlythree
  * @date 2020/11/09 9:31
  */
 @Slf4j

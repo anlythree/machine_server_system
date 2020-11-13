@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import top.anly.business.runpart.domain.RunPart;
 
 /**
- * @author wangli
+ * @author anlythree
  * @date 2020/11/11 10:39
  */
 public interface RunPartService extends IService<RunPart> {

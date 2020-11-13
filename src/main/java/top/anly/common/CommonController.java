@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import top.anly.common.mqtt.MqttConnect;
 
 /**
- * @author wangli
+ * @author anlythree
  * @date 2020/11/9 17:54
  */
 @Slf4j

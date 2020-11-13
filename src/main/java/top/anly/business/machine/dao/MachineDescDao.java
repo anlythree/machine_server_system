@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import top.anly.business.machine.domain.MachineDesc;
 
 /**
- * @author wangli
+ * @author anlythree
  * @date 2020/11/9 17:10
  */
 @Repository

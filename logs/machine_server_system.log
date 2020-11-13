@@ -16,3 +16,399 @@
 2020-11-13 09:02:26,281 INFO (StartupInfoLogger.java:59)- Started MachineServerSystemApplication in 4.215 seconds (JVM running for 6.299)
 2020-11-13 09:02:31,723 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
 2020-11-13 09:02:31,723 INFO (DruidDataSource.java:1689)- {dataSource-1} closed
+2020-11-13 11:32:17,615 INFO (StartupInfoLogger.java:50)- Starting MachineServerSystemApplication on DESKTOP-ANC07SR with PID 12652 (F:\my\machine_server_system\target\classes started by 24501 in F:\my\machine_server_system)
+2020-11-13 11:32:17,625 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-11-13 11:32:18,605 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8001 (http)
+2020-11-13 11:32:18,621 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-13 11:32:18,621 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-11-13 11:32:18,621 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-11-13 11:32:18,636 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [G:\jdk1.8.0_192\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;G:\jdk1.8.0_192\bin;G:\jdk1.8.0_192\jre\bin;G:\Git\cmd;G:\Git\bin;G:\Git\mingw64\libexec\git-core;G:\nodejs\;C:\Program Files\nodejs\node_global;G:\maven\apache-maven-3.6.3\bin;G:\gradle-6.5.1\bin;G:\redis\;C:\Users\24501\AppData\Local\Microsoft\WindowsApps;;G:\Microsoft VS Code\bin;C:\Users\24501\AppData\Roaming\npm;G:\fiddler;.]
+2020-11-13 11:32:18,752 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-11-13 11:32:18,752 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1087 ms
+2020-11-13 11:32:18,953 INFO (DruidDataSource.java:914)- {dataSource-1} inited
+2020-11-13 11:32:19,939 WARN (MqttConnect.java:56)- MQTT服务器连接成功-----------
+2020-11-13 11:32:20,008 WARN (MqttConnect.java:60)- ------订阅成功anly/machine/#
+2020-11-13 11:32:20,124 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-13 11:32:20,302 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8001"]
+2020-11-13 11:32:20,324 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-13 11:32:20,324 INFO (StartupInfoLogger.java:59)- Started MachineServerSystemApplication in 3.09 seconds (JVM running for 4.215)
+2020-11-13 11:33:00,970 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-13 11:33:00,971 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2020-11-13 11:33:00,976 INFO (FrameworkServlet.java:546)- Completed initialization in 5 ms
+2020-11-13 11:36:06,032 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-13 11:36:06,032 INFO (DruidDataSource.java:1689)- {dataSource-1} closed
+2020-11-13 11:36:11,869 INFO (StartupInfoLogger.java:50)- Starting MachineServerSystemApplication on DESKTOP-ANC07SR with PID 10396 (F:\my\machine_server_system\target\classes started by 24501 in F:\my\machine_server_system)
+2020-11-13 11:36:11,872 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-11-13 11:36:12,883 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9a9212a7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-13 11:36:13,137 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8001 (http)
+2020-11-13 11:36:13,152 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-13 11:36:13,152 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-11-13 11:36:13,152 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-11-13 11:36:13,168 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [G:\jdk1.8.0_192\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;G:\jdk1.8.0_192\bin;G:\jdk1.8.0_192\jre\bin;G:\Git\cmd;G:\Git\bin;G:\Git\mingw64\libexec\git-core;G:\nodejs\;C:\Program Files\nodejs\node_global;G:\maven\apache-maven-3.6.3\bin;G:\gradle-6.5.1\bin;G:\redis\;C:\Users\24501\AppData\Local\Microsoft\WindowsApps;;G:\Microsoft VS Code\bin;C:\Users\24501\AppData\Roaming\npm;G:\fiddler;.]
+2020-11-13 11:36:13,268 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-11-13 11:36:13,268 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1365 ms
+2020-11-13 11:36:13,500 INFO (DruidDataSource.java:914)- {dataSource-1} inited
+2020-11-13 11:36:14,503 WARN (MqttConnect.java:56)- MQTT服务器连接成功-----------
+2020-11-13 11:36:14,556 WARN (MqttConnect.java:60)- ------订阅成功anly/machine/#
+2020-11-13 11:36:14,904 INFO (PropertySourcedRequestMappingHandlerMapping.java:69)- Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-11-13 11:36:15,015 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-13 11:36:15,198 INFO (DocumentationPluginsBootstrapper.java:160)- Context refreshed
+2020-11-13 11:36:15,218 INFO (DocumentationPluginsBootstrapper.java:163)- Found 1 custom documentation plugin(s)
+2020-11-13 11:36:15,256 INFO (ApiListingReferenceScanner.java:41)- Scanning for api listing references
+2020-11-13 11:36:15,282 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8001"]
+2020-11-13 11:36:15,313 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-13 11:36:15,313 INFO (StartupInfoLogger.java:59)- Started MachineServerSystemApplication in 3.818 seconds (JVM running for 4.892)
+2020-11-13 11:37:37,332 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-13 11:37:37,332 INFO (DruidDataSource.java:1689)- {dataSource-1} closed
+2020-11-13 11:37:43,537 INFO (StartupInfoLogger.java:50)- Starting MachineServerSystemApplication on DESKTOP-ANC07SR with PID 12356 (F:\my\machine_server_system\target\classes started by 24501 in F:\my\machine_server_system)
+2020-11-13 11:37:43,537 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-11-13 11:37:44,455 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2d0cfb99] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-13 11:37:44,694 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8001 (http)
+2020-11-13 11:37:44,709 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-13 11:37:44,709 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-11-13 11:37:44,709 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-11-13 11:37:44,725 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [G:\jdk1.8.0_192\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;G:\jdk1.8.0_192\bin;G:\jdk1.8.0_192\jre\bin;G:\Git\cmd;G:\Git\bin;G:\Git\mingw64\libexec\git-core;G:\nodejs\;C:\Program Files\nodejs\node_global;G:\maven\apache-maven-3.6.3\bin;G:\gradle-6.5.1\bin;G:\redis\;C:\Users\24501\AppData\Local\Microsoft\WindowsApps;;G:\Microsoft VS Code\bin;C:\Users\24501\AppData\Roaming\npm;G:\fiddler;.]
+2020-11-13 11:37:44,825 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-11-13 11:37:44,825 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1250 ms
+2020-11-13 11:37:45,057 INFO (DruidDataSource.java:914)- {dataSource-1} inited
+2020-11-13 11:37:46,112 WARN (MqttConnect.java:56)- MQTT服务器连接成功-----------
+2020-11-13 11:37:46,180 WARN (MqttConnect.java:59)- ------开始订阅主题:anly/machine/#
+2020-11-13 11:37:46,459 INFO (PropertySourcedRequestMappingHandlerMapping.java:69)- Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-11-13 11:37:46,559 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-13 11:37:46,697 INFO (DocumentationPluginsBootstrapper.java:160)- Context refreshed
+2020-11-13 11:37:46,713 INFO (DocumentationPluginsBootstrapper.java:163)- Found 1 custom documentation plugin(s)
+2020-11-13 11:37:46,744 INFO (ApiListingReferenceScanner.java:41)- Scanning for api listing references
+2020-11-13 11:37:46,760 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8001"]
+2020-11-13 11:37:46,797 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-13 11:37:46,797 INFO (StartupInfoLogger.java:59)- Started MachineServerSystemApplication in 3.607 seconds (JVM running for 4.78)
+2020-11-13 11:38:06,370 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-13 11:38:06,370 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2020-11-13 11:38:06,378 INFO (FrameworkServlet.java:546)- Completed initialization in 8 ms
+2020-11-13 11:38:54,284 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-13 11:38:54,284 INFO (DruidDataSource.java:1689)- {dataSource-1} closed
+2020-11-13 11:39:00,299 INFO (StartupInfoLogger.java:50)- Starting MachineServerSystemApplication on DESKTOP-ANC07SR with PID 10176 (F:\my\machine_server_system\target\classes started by 24501 in F:\my\machine_server_system)
+2020-11-13 11:39:00,299 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-11-13 11:39:01,355 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$de06887a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-13 11:39:01,618 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8001 (http)
+2020-11-13 11:39:01,633 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-13 11:39:01,633 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-11-13 11:39:01,633 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-11-13 11:39:01,649 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [G:\jdk1.8.0_192\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;G:\jdk1.8.0_192\bin;G:\jdk1.8.0_192\jre\bin;G:\Git\cmd;G:\Git\bin;G:\Git\mingw64\libexec\git-core;G:\nodejs\;C:\Program Files\nodejs\node_global;G:\maven\apache-maven-3.6.3\bin;G:\gradle-6.5.1\bin;G:\redis\;C:\Users\24501\AppData\Local\Microsoft\WindowsApps;;G:\Microsoft VS Code\bin;C:\Users\24501\AppData\Roaming\npm;G:\fiddler;.]
+2020-11-13 11:39:01,771 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-11-13 11:39:01,771 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1425 ms
+2020-11-13 11:39:01,996 INFO (DruidDataSource.java:914)- {dataSource-1} inited
+2020-11-13 11:39:03,090 WARN (MqttConnect.java:56)- ------MQTT服务器连接成功
+2020-11-13 11:39:03,159 WARN (MqttConnect.java:59)- ------开始订阅主题:anly/machine/#
+2020-11-13 11:39:03,375 INFO (PropertySourcedRequestMappingHandlerMapping.java:69)- Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-11-13 11:39:03,475 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-13 11:39:03,638 INFO (DocumentationPluginsBootstrapper.java:160)- Context refreshed
+2020-11-13 11:39:03,660 INFO (DocumentationPluginsBootstrapper.java:163)- Found 1 custom documentation plugin(s)
+2020-11-13 11:39:03,676 INFO (ApiListingReferenceScanner.java:41)- Scanning for api listing references
+2020-11-13 11:39:03,823 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8001"]
+2020-11-13 11:39:03,839 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-13 11:39:03,839 INFO (StartupInfoLogger.java:59)- Started MachineServerSystemApplication in 3.888 seconds (JVM running for 4.958)
+2020-11-13 11:39:10,556 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-13 11:39:10,556 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2020-11-13 11:39:10,563 INFO (FrameworkServlet.java:546)- Completed initialization in 7 ms
+2020-11-13 11:39:15,006 ERROR (AppExceptionHandler.java:34)- [/machine/machine/queryMachineInfo]异常[{}]
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: org.postgresql.util.PSQLException: ERROR: relation "machine_desc" does not exist
+  位置：103
+### The error may exist in top/anly/business/machine/dao/MachineDescDao.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,machine_name,machine_remark,machine_status,machine_open_time,gmt_create,gmt_modified  FROM machine_desc
+### Cause: org.postgresql.util.PSQLException: ERROR: relation "machine_desc" does not exist
+  位置：103
+; bad SQL grammar []; nested exception is org.postgresql.util.PSQLException: ERROR: relation "machine_desc" does not exist
+  位置：103
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:234)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy78.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:168)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:82)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:61)
+	at com.sun.proxy.$Proxy84.selectList(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy85.selectList(Unknown Source)
+	at com.baomidou.mybatisplus.extension.service.impl.ServiceImpl.list(ServiceImpl.java:272)
+	at com.baomidou.mybatisplus.extension.service.IService.list(IService.java:249)
+	at top.anly.business.machine.service.impl.MachineDescServiceImpl.queryMachineInfo(MachineDescServiceImpl.java:227)
+	at top.anly.business.machine.service.impl.MachineDescServiceImpl$$FastClassBySpringCGLIB$$8066e018.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at top.anly.business.machine.service.impl.MachineDescServiceImpl$$EnhancerBySpringCGLIB$$1e275392.queryMachineInfo(<generated>)
+	at top.anly.business.machine.controller.MachineController.isAutoGenerate(MachineController.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "machine_desc" does not exist
+  位置：103
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:143)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:132)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:494)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:136)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 79 common frames omitted
+2020-11-13 11:41:03,997 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-13 11:41:04,000 INFO (DruidDataSource.java:1689)- {dataSource-1} closed
+2020-11-13 11:41:07,350 INFO (StartupInfoLogger.java:50)- Starting MachineServerSystemApplication on DESKTOP-ANC07SR with PID 1296 (F:\my\machine_server_system\target\classes started by 24501 in F:\my\machine_server_system)
+2020-11-13 11:41:07,353 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-11-13 11:41:08,306 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8a698eb7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-13 11:41:08,571 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8001 (http)
+2020-11-13 11:41:08,582 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-13 11:41:08,589 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-11-13 11:41:08,589 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-11-13 11:41:08,595 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [G:\jdk1.8.0_192\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;G:\jdk1.8.0_192\bin;G:\jdk1.8.0_192\jre\bin;G:\Git\cmd;G:\Git\bin;G:\Git\mingw64\libexec\git-core;G:\nodejs\;C:\Program Files\nodejs\node_global;G:\maven\apache-maven-3.6.3\bin;G:\gradle-6.5.1\bin;G:\redis\;C:\Users\24501\AppData\Local\Microsoft\WindowsApps;;G:\Microsoft VS Code\bin;C:\Users\24501\AppData\Roaming\npm;G:\fiddler;.]
+2020-11-13 11:41:08,712 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-11-13 11:41:08,712 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1314 ms
+2020-11-13 11:41:08,958 INFO (DruidDataSource.java:914)- {dataSource-1} inited
+2020-11-13 11:41:09,899 WARN (MqttConnect.java:56)- ------MQTT服务器连接成功
+2020-11-13 11:41:09,964 WARN (MqttConnect.java:59)- ------开始订阅主题:anly/machine/#
+2020-11-13 11:41:10,204 INFO (PropertySourcedRequestMappingHandlerMapping.java:69)- Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-11-13 11:41:10,311 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-13 11:41:10,489 INFO (DocumentationPluginsBootstrapper.java:160)- Context refreshed
+2020-11-13 11:41:10,507 INFO (DocumentationPluginsBootstrapper.java:163)- Found 1 custom documentation plugin(s)
+2020-11-13 11:41:10,546 INFO (ApiListingReferenceScanner.java:41)- Scanning for api listing references
+2020-11-13 11:41:10,653 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8001"]
+2020-11-13 11:41:10,677 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-13 11:41:10,680 INFO (StartupInfoLogger.java:59)- Started MachineServerSystemApplication in 3.669 seconds (JVM running for 4.714)
+2020-11-13 11:41:17,960 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-13 11:41:17,960 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2020-11-13 11:41:17,967 INFO (FrameworkServlet.java:546)- Completed initialization in 7 ms
+2020-11-13 11:44:52,977 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-13 11:44:52,980 INFO (DruidDataSource.java:1689)- {dataSource-1} closed
+2020-11-13 11:44:58,764 INFO (StartupInfoLogger.java:50)- Starting MachineServerSystemApplication on DESKTOP-ANC07SR with PID 4832 (F:\my\machine_server_system\target\classes started by 24501 in F:\my\machine_server_system)
+2020-11-13 11:44:58,768 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-11-13 11:45:00,029 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$760bddc2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-13 11:45:00,409 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8001 (http)
+2020-11-13 11:45:00,435 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-13 11:45:00,442 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-11-13 11:45:00,442 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-11-13 11:45:00,447 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [G:\jdk1.8.0_192\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;G:\jdk1.8.0_192\bin;G:\jdk1.8.0_192\jre\bin;G:\Git\cmd;G:\Git\bin;G:\Git\mingw64\libexec\git-core;G:\nodejs\;C:\Program Files\nodejs\node_global;G:\maven\apache-maven-3.6.3\bin;G:\gradle-6.5.1\bin;G:\redis\;C:\Users\24501\AppData\Local\Microsoft\WindowsApps;;G:\Microsoft VS Code\bin;C:\Users\24501\AppData\Roaming\npm;G:\fiddler;.]
+2020-11-13 11:45:00,573 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-11-13 11:45:00,573 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1756 ms
+2020-11-13 11:45:00,832 INFO (DruidDataSource.java:914)- {dataSource-1} inited
+2020-11-13 11:45:01,858 WARN (MqttConnect.java:56)- ------MQTT服务器连接成功
+2020-11-13 11:45:01,922 WARN (MqttConnect.java:59)- ------开始订阅主题:anly/machine/#
+2020-11-13 11:45:02,258 INFO (PropertySourcedRequestMappingHandlerMapping.java:69)- Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-11-13 11:45:02,375 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-13 11:45:02,564 INFO (DocumentationPluginsBootstrapper.java:160)- Context refreshed
+2020-11-13 11:45:02,583 INFO (DocumentationPluginsBootstrapper.java:163)- Found 1 custom documentation plugin(s)
+2020-11-13 11:45:02,619 INFO (ApiListingReferenceScanner.java:41)- Scanning for api listing references
+2020-11-13 11:45:02,758 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8001"]
+2020-11-13 11:45:02,787 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-13 11:45:02,792 INFO (StartupInfoLogger.java:59)- Started MachineServerSystemApplication in 4.397 seconds (JVM running for 5.473)
+2020-11-13 11:45:15,953 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-13 11:45:15,953 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2020-11-13 11:45:15,959 INFO (FrameworkServlet.java:546)- Completed initialization in 5 ms
+2020-11-13 11:45:34,823 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-13 11:45:34,825 INFO (DruidDataSource.java:1689)- {dataSource-1} closed
+2020-11-13 11:45:39,182 INFO (StartupInfoLogger.java:50)- Starting MachineServerSystemApplication on DESKTOP-ANC07SR with PID 13284 (F:\my\machine_server_system\target\classes started by 24501 in F:\my\machine_server_system)
+2020-11-13 11:45:39,185 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-11-13 11:45:40,238 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4645b11] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-13 11:45:40,500 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8001 (http)
+2020-11-13 11:45:40,512 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-13 11:45:40,520 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-11-13 11:45:40,521 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-11-13 11:45:40,527 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [G:\jdk1.8.0_192\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;G:\jdk1.8.0_192\bin;G:\jdk1.8.0_192\jre\bin;G:\Git\cmd;G:\Git\bin;G:\Git\mingw64\libexec\git-core;G:\nodejs\;C:\Program Files\nodejs\node_global;G:\maven\apache-maven-3.6.3\bin;G:\gradle-6.5.1\bin;G:\redis\;C:\Users\24501\AppData\Local\Microsoft\WindowsApps;;G:\Microsoft VS Code\bin;C:\Users\24501\AppData\Roaming\npm;G:\fiddler;.]
+2020-11-13 11:45:40,644 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-11-13 11:45:40,645 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1414 ms
+2020-11-13 11:45:40,901 INFO (DruidDataSource.java:914)- {dataSource-1} inited
+2020-11-13 11:45:41,929 WARN (MqttConnect.java:56)- ------MQTT服务器连接成功
+2020-11-13 11:45:41,997 WARN (MqttConnect.java:59)- ------开始订阅主题:anly/machine/#
+2020-11-13 11:45:42,240 INFO (PropertySourcedRequestMappingHandlerMapping.java:69)- Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-11-13 11:45:42,353 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-13 11:45:42,535 INFO (DocumentationPluginsBootstrapper.java:160)- Context refreshed
+2020-11-13 11:45:42,553 INFO (DocumentationPluginsBootstrapper.java:163)- Found 1 custom documentation plugin(s)
+2020-11-13 11:45:42,579 INFO (ApiListingReferenceScanner.java:41)- Scanning for api listing references
+2020-11-13 11:45:42,699 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8001"]
+2020-11-13 11:45:42,727 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-13 11:45:42,730 INFO (StartupInfoLogger.java:59)- Started MachineServerSystemApplication in 3.917 seconds (JVM running for 4.997)
+2020-11-13 11:46:58,953 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-13 11:46:58,956 INFO (DruidDataSource.java:1689)- {dataSource-1} closed
+2020-11-13 11:47:03,445 INFO (StartupInfoLogger.java:50)- Starting MachineServerSystemApplication on DESKTOP-ANC07SR with PID 4840 (F:\my\machine_server_system\target\classes started by 24501 in F:\my\machine_server_system)
+2020-11-13 11:47:03,448 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-11-13 11:47:04,398 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ea1f1c60] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-13 11:47:04,676 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8001 (http)
+2020-11-13 11:47:04,690 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-13 11:47:04,697 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-11-13 11:47:04,698 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-11-13 11:47:04,703 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [G:\jdk1.8.0_192\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;G:\jdk1.8.0_192\bin;G:\jdk1.8.0_192\jre\bin;G:\Git\cmd;G:\Git\bin;G:\Git\mingw64\libexec\git-core;G:\nodejs\;C:\Program Files\nodejs\node_global;G:\maven\apache-maven-3.6.3\bin;G:\gradle-6.5.1\bin;G:\redis\;C:\Users\24501\AppData\Local\Microsoft\WindowsApps;;G:\Microsoft VS Code\bin;C:\Users\24501\AppData\Roaming\npm;G:\fiddler;.]
+2020-11-13 11:47:04,821 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-11-13 11:47:04,821 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1333 ms
+2020-11-13 11:47:05,058 INFO (DruidDataSource.java:914)- {dataSource-1} inited
+2020-11-13 11:47:06,006 WARN (MqttConnect.java:56)- ------MQTT服务器连接成功
+2020-11-13 11:47:06,064 WARN (MqttConnect.java:59)- ------开始订阅主题:anly/machine/#
+2020-11-13 11:47:06,306 INFO (PropertySourcedRequestMappingHandlerMapping.java:69)- Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-11-13 11:47:06,420 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-13 11:47:06,580 INFO (DocumentationPluginsBootstrapper.java:160)- Context refreshed
+2020-11-13 11:47:06,595 INFO (DocumentationPluginsBootstrapper.java:163)- Found 1 custom documentation plugin(s)
+2020-11-13 11:47:06,637 INFO (ApiListingReferenceScanner.java:41)- Scanning for api listing references
+2020-11-13 11:47:06,750 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8001"]
+2020-11-13 11:47:06,773 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-13 11:47:06,775 INFO (StartupInfoLogger.java:59)- Started MachineServerSystemApplication in 3.674 seconds (JVM running for 4.727)
+2020-11-13 11:47:09,215 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-13 11:47:09,215 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2020-11-13 11:47:09,220 INFO (FrameworkServlet.java:546)- Completed initialization in 5 ms
+2020-11-13 11:51:54,675 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-13 11:51:54,679 INFO (DruidDataSource.java:1689)- {dataSource-1} closed
+2020-11-13 11:51:59,465 INFO (StartupInfoLogger.java:50)- Starting MachineServerSystemApplication on DESKTOP-ANC07SR with PID 12648 (F:\my\machine_server_system\target\classes started by 24501 in F:\my\machine_server_system)
+2020-11-13 11:51:59,468 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-11-13 11:52:00,412 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$83cf358e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-13 11:52:00,675 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8001 (http)
+2020-11-13 11:52:00,687 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-13 11:52:00,694 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-11-13 11:52:00,694 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-11-13 11:52:00,699 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [G:\jdk1.8.0_192\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;G:\jdk1.8.0_192\bin;G:\jdk1.8.0_192\jre\bin;G:\Git\cmd;G:\Git\bin;G:\Git\mingw64\libexec\git-core;G:\nodejs\;C:\Program Files\nodejs\node_global;G:\maven\apache-maven-3.6.3\bin;G:\gradle-6.5.1\bin;G:\redis\;C:\Users\24501\AppData\Local\Microsoft\WindowsApps;;G:\Microsoft VS Code\bin;C:\Users\24501\AppData\Roaming\npm;G:\fiddler;.]
+2020-11-13 11:52:00,812 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-11-13 11:52:00,812 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1302 ms
+2020-11-13 11:52:01,048 INFO (DruidDataSource.java:914)- {dataSource-1} inited
+2020-11-13 11:52:02,013 WARN (MqttConnect.java:56)- ------MQTT服务器连接成功
+2020-11-13 11:52:02,073 WARN (MqttConnect.java:59)- ------开始订阅主题:anly/machine/#
+2020-11-13 11:52:02,307 INFO (PropertySourcedRequestMappingHandlerMapping.java:69)- Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-11-13 11:52:02,410 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-13 11:52:02,573 INFO (DocumentationPluginsBootstrapper.java:160)- Context refreshed
+2020-11-13 11:52:02,589 INFO (DocumentationPluginsBootstrapper.java:163)- Found 1 custom documentation plugin(s)
+2020-11-13 11:52:02,617 INFO (ApiListingReferenceScanner.java:41)- Scanning for api listing references
+2020-11-13 11:52:02,748 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8001"]
+2020-11-13 11:52:02,772 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-13 11:52:02,775 INFO (StartupInfoLogger.java:59)- Started MachineServerSystemApplication in 3.668 seconds (JVM running for 4.74)
+2020-11-13 11:52:02,887 INFO (MachineDescServiceImpl.java:217)- 所有设备信息已缓存至map中
+2020-11-13 11:52:02,887 INFO (MachineDescServiceImpl.java:218)- map内容:{}
+2020-11-13 11:53:42,009 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-13 11:53:42,014 INFO (DruidDataSource.java:1689)- {dataSource-1} closed
+2020-11-13 11:53:46,485 INFO (StartupInfoLogger.java:50)- Starting MachineServerSystemApplication on DESKTOP-ANC07SR with PID 3016 (F:\my\machine_server_system\target\classes started by 24501 in F:\my\machine_server_system)
+2020-11-13 11:53:46,488 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-11-13 11:53:47,427 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$babb33da] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-13 11:53:47,706 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8001 (http)
+2020-11-13 11:53:47,719 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-13 11:53:47,726 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-11-13 11:53:47,726 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-11-13 11:53:47,731 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [G:\jdk1.8.0_192\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;G:\jdk1.8.0_192\bin;G:\jdk1.8.0_192\jre\bin;G:\Git\cmd;G:\Git\bin;G:\Git\mingw64\libexec\git-core;G:\nodejs\;C:\Program Files\nodejs\node_global;G:\maven\apache-maven-3.6.3\bin;G:\gradle-6.5.1\bin;G:\redis\;C:\Users\24501\AppData\Local\Microsoft\WindowsApps;;G:\Microsoft VS Code\bin;C:\Users\24501\AppData\Roaming\npm;G:\fiddler;.]
+2020-11-13 11:53:47,845 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-11-13 11:53:47,845 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1316 ms
+2020-11-13 11:53:48,089 INFO (DruidDataSource.java:914)- {dataSource-1} inited
+2020-11-13 11:53:49,037 WARN (MqttConnect.java:56)- ------MQTT服务器连接成功
+2020-11-13 11:53:49,098 WARN (MqttConnect.java:59)- ------开始订阅主题:anly/machine/#
+2020-11-13 11:53:49,349 INFO (PropertySourcedRequestMappingHandlerMapping.java:69)- Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-11-13 11:53:49,453 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-13 11:53:49,608 INFO (DocumentationPluginsBootstrapper.java:160)- Context refreshed
+2020-11-13 11:53:49,625 INFO (DocumentationPluginsBootstrapper.java:163)- Found 1 custom documentation plugin(s)
+2020-11-13 11:53:49,655 INFO (ApiListingReferenceScanner.java:41)- Scanning for api listing references
+2020-11-13 11:53:49,812 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8001"]
+2020-11-13 11:53:49,845 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-13 11:53:49,848 INFO (StartupInfoLogger.java:59)- Started MachineServerSystemApplication in 3.734 seconds (JVM running for 4.802)
+2020-11-13 11:53:49,968 INFO (MachineDescServiceImpl.java:217)- 所有设备信息已缓存至map中
+2020-11-13 11:53:49,969 INFO (MachineDescServiceImpl.java:218)- map内容:{}
+2020-11-13 11:56:54,011 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-13 11:56:54,016 INFO (DruidDataSource.java:1689)- {dataSource-1} closed
+2020-11-13 11:56:59,780 INFO (StartupInfoLogger.java:50)- Starting MachineServerSystemApplication on DESKTOP-ANC07SR with PID 8108 (F:\my\machine_server_system\target\classes started by 24501 in F:\my\machine_server_system)
+2020-11-13 11:56:59,783 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-11-13 11:57:00,865 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fb545416] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-13 11:57:01,146 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8001 (http)
+2020-11-13 11:57:01,158 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-13 11:57:01,165 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-11-13 11:57:01,165 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-11-13 11:57:01,171 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [G:\jdk1.8.0_192\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;G:\jdk1.8.0_192\bin;G:\jdk1.8.0_192\jre\bin;G:\Git\cmd;G:\Git\bin;G:\Git\mingw64\libexec\git-core;G:\nodejs\;C:\Program Files\nodejs\node_global;G:\maven\apache-maven-3.6.3\bin;G:\gradle-6.5.1\bin;G:\redis\;C:\Users\24501\AppData\Local\Microsoft\WindowsApps;;G:\Microsoft VS Code\bin;C:\Users\24501\AppData\Roaming\npm;G:\fiddler;.]
+2020-11-13 11:57:01,283 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-11-13 11:57:01,283 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1459 ms
+2020-11-13 11:57:01,525 INFO (DruidDataSource.java:914)- {dataSource-1} inited
+2020-11-13 11:57:02,483 WARN (MqttConnect.java:56)- ------MQTT服务器连接成功
+2020-11-13 11:57:02,546 WARN (MqttConnect.java:59)- ------开始订阅主题:anly/machine/#
+2020-11-13 11:57:02,786 INFO (PropertySourcedRequestMappingHandlerMapping.java:69)- Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-11-13 11:57:02,895 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-13 11:57:03,053 INFO (DocumentationPluginsBootstrapper.java:160)- Context refreshed
+2020-11-13 11:57:03,069 INFO (DocumentationPluginsBootstrapper.java:163)- Found 1 custom documentation plugin(s)
+2020-11-13 11:57:03,108 INFO (ApiListingReferenceScanner.java:41)- Scanning for api listing references
+2020-11-13 11:57:03,226 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8001"]
+2020-11-13 11:57:03,250 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-13 11:57:03,252 INFO (StartupInfoLogger.java:59)- Started MachineServerSystemApplication in 3.834 seconds (JVM running for 4.908)
+2020-11-13 11:57:03,363 INFO (MachineDescServiceImpl.java:217)- 所有设备信息已缓存至map中
+2020-11-13 11:57:03,364 INFO (MachineDescServiceImpl.java:218)- map内容:{}
+2020-11-13 11:57:10,835 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-13 11:57:10,835 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2020-11-13 11:57:10,842 INFO (FrameworkServlet.java:546)- Completed initialization in 7 ms
+2020-11-13 11:57:17,116 INFO (MachineDescServiceImpl.java:217)- 所有设备信息已缓存至map中
+2020-11-13 11:57:17,116 INFO (MachineDescServiceImpl.java:218)- map内容:{}
+2020-11-13 12:00:19,367 INFO (MachineDescServiceImpl.java:217)- 所有设备信息已缓存至map中
+2020-11-13 12:00:19,367 INFO (MachineDescServiceImpl.java:218)- map内容:{南左=MachineStatusModel(machineStatus=4, lastHeartTime=2020-11-13T12:00:19.367), 北左=MachineStatusModel(machineStatus=4, lastHeartTime=2020-11-13T12:00:19.367), 南右=MachineStatusModel(machineStatus=4, lastHeartTime=2020-11-13T12:00:19.367), 北右=MachineStatusModel(machineStatus=4, lastHeartTime=2020-11-13T12:00:19.367)}

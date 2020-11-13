@@ -2,7 +2,7 @@ package top.anly.business.machine.enums;
 
 /**
  * 电脑横机的状态
- * @author wangli
+ * @author anlythree
  * @date 2020/11/10 13:46
  */
 public enum MachineDescStatusEnum {

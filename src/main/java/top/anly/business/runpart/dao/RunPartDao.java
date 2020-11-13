@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 import top.anly.business.runpart.domain.RunPart;
 
 /**
- * @author wangli
+ * @author anlythree
  * @date 2020/11/11 10:35
  */
 @Repository

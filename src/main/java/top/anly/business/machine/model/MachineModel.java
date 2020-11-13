@@ -21,7 +21,7 @@ import java.util.List;
 /**
  * 设备操作模型
  *
- * @author wangli
+ * @author anlythree
  * @date 2020/11/11 10:08
  */
 @Data

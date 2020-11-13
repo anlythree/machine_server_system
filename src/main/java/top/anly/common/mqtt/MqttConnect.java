@@ -14,7 +14,7 @@ import java.util.UUID;
 /**
  * mqtt
  *
- * @author wangli
+ * @author anlythree
  * @date 2020-11-09
  */
 @Lazy
@@ -53,11 +53,10 @@ public class MqttConnect {
         CLIENT_ID = "machine_server_system_" + LocalDate.now();
         myClient = new MqttClient(HOST, CLIENT_ID + UUID.randomUUID().toString(), new MemoryPersistence());
         connect();
-        log.warn("MQTT服务器连接成功-----------");
-        System.out.println("MQTT服务器连接成功-----------");
+        log.warn("------MQTT服务器连接成功");
         //订阅采集消息
         myClient.subscribe(TOPIC_COLLECT, 0);
-        log.warn("------订阅成功" + TOPIC_COLLECT);
+        log.warn("------开始订阅主题:" + TOPIC_COLLECT);
     }
 
     /**

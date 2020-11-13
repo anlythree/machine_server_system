@@ -5,7 +5,7 @@ import lombok.NoArgsConstructor;
 
 /**
  * 电脑横机各动作定义
- * @author wangli
+ * @author anlythree
  * @date 2020/11/12 11:39
  */
 @NoArgsConstructor

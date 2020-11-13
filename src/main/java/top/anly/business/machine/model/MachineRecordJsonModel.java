@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 
 /**
- * @author wangli
+ * @author anlythree
  * @date 2020/11/9 17:25
  */
 @Data

@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author wangli
+ * @author anlythree
  * @date 2020/11/9 17:20
  */
 @Slf4j
@@ -37,10 +37,6 @@ public class MachineDescServiceImpl extends ServiceImpl<MachineDescDao,MachineDe
      * 此map为设备的最新状态和最近心跳时间
      */
     public static Map<String, MachineStatusModel> machineDescMap = new HashMap<>();
-
-
-    @Resource
-    private MachineDescDao machineDescDao;
 
     @Resource
     private LogDescService logDescService;
@@ -220,5 +216,21 @@ public class MachineDescServiceImpl extends ServiceImpl<MachineDescDao,MachineDe
         }
         log.info("所有设备信息已缓存至map中");
         log.info("map内容:"+machineDescMap.toString());
+    }
+
+    @Override
+    public List<MachineDesc> queryMachineInfo() {
+        return list();
+    }
+
+    @Override
+    public Map<String, MachineStatusModel> queryMachineInfoCache() {
+        return machineDescMap;
+    }
+
+    @Override
+    public Map<String, MachineStatusModel> manualCacheMachineInfo() {
+        cacheMachineInfo();
+        return machineDescMap;
     }
 }

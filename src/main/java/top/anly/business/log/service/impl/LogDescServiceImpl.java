@@ -7,7 +7,7 @@ import top.anly.business.log.domain.LogDesc;
 import top.anly.business.log.service.LogDescService;
 
 /**
- * @author wangli
+ * @author anlythree
  * @date 2020/11/11 10:11
  */
 @Service
