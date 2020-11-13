@@ -46,7 +46,6 @@ public class MessageThread implements Runnable {
      * @param
      * @return
      */
-    @Transactional(readOnly = false, rollbackFor = Exception.class)
     @Override
     public void run() {
         // 订阅的消息

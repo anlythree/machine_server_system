@@ -42,7 +42,7 @@ public class MachineModel {
     /**
      * 更新缓存中的状态和时间
      */
-    private void updateMachineMap() {
+    public void updateMachineMap() {
         MachineDescServiceImpl.machineDescMap.put(this.getMachineDesc().getMachineName(),
                 new MachineStatusModel(this.getMachineDesc().getMachineStatus(), LocalDateTime.now()));
     }
@@ -69,8 +69,6 @@ public class MachineModel {
         this.getMachineDesc().setMachineStatus(MachineDescStatusEnum.PENDING.getStatusNum());
         // 添加一条开机记录
         this.getLogDescList().add(new LogDesc(this.getMachineDesc(),"开机"));
-        // 修改缓存中的心跳时间和机器设备状态
-        updateMachineMap();
         return this;
     }
 
@@ -84,8 +82,6 @@ public class MachineModel {
         this.getMachineDesc().setMachineStatus(MachineDescStatusEnum.SHUT_DOWN.getStatusNum());
         // 添加一条关机记录
         this.getLogDescList().add(new LogDesc(this.getMachineDesc(),"关机"));
-        // 修改缓存中的心跳时间和机器设备状态
-        updateMachineMap();
         return this;
     }
 
@@ -101,8 +97,6 @@ public class MachineModel {
         this.getLogDescList().add(new LogDesc(this.getMachineDesc(),"开始运行"));
         // 添加一条时间段记录
         this.setRunPart(new RunPart(this.getMachineDesc()));
-        // 修改缓存中的心跳时间和机器设备状态
-        updateMachineMap();
         return this;
     }
 
@@ -124,8 +118,6 @@ public class MachineModel {
         RunPart runPartStart = runPartService.getOne(runPartLambdaQueryWrapper);
         // 添加原运行时间段的结束日期和使用时间段
         this.setRunPart(new RunPart(runPartStart));
-        // 修改缓存中的心跳时间和机器设备状态
-        updateMachineMap();
         return this;
     }
 
@@ -138,8 +130,6 @@ public class MachineModel {
         this.getMachineDesc().setMachineStatus(MachineDescStatusEnum.ERROR.getStatusNum());
         // 添加一条运行记录
         this.getLogDescList().add(new LogDesc(this.getMachineDesc(),"开始报警"));
-        // 修改缓存中的心跳时间和机器设备状态
-        updateMachineMap();
         return this;
     }
 
@@ -152,8 +142,6 @@ public class MachineModel {
         this.getMachineDesc().setMachineStatus(MachineDescStatusEnum.PENDING.getStatusNum());
         // 添加一条运行记录
         this.getLogDescList().add(new LogDesc(this.getMachineDesc(),"报警结束"));
-        // 修改缓存中的心跳时间和机器设备状态
-        updateMachineMap();
         return this;
     }
 
@@ -166,8 +154,6 @@ public class MachineModel {
         this.getMachineDesc().setMachineStatus(MachineDescStatusEnum.PENDING.getStatusNum());
         // 添加一条运行记录
         this.getLogDescList().add(new LogDesc(this.getMachineDesc(),"上线"));
-        // 修改缓存中的心跳时间和机器设备状态
-        updateMachineMap();
         return this;
     }
 
@@ -180,8 +166,6 @@ public class MachineModel {
         this.getMachineDesc().setMachineStatus(MachineDescStatusEnum.NOT_ONLINE.getStatusNum());
         // 添加一条运行记录
         this.getLogDescList().add(new LogDesc(this.getMachineDesc(),"离线"));
-        // 修改缓存中的心跳时间和机器设备状态
-        updateMachineMap();
         return this;
     }
 

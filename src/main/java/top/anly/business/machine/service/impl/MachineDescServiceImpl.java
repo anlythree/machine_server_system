@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import top.anly.business.log.service.LogDescService;
 import top.anly.business.machine.dao.MachineDescDao;
 import top.anly.business.machine.domain.MachineDesc;
 import top.anly.business.machine.enums.MachineDescStatusEnum;
@@ -14,6 +15,7 @@ import top.anly.business.machine.model.MachineModel;
 import top.anly.business.machine.model.MachineRecordJsonModel;
 import top.anly.business.machine.model.MachineStatusModel;
 import top.anly.business.machine.service.MachineDescService;
+import top.anly.business.runpart.service.RunPartService;
 import top.anly.common.mqtt.MessageThread;
 
 import javax.annotation.Resource;
@@ -39,6 +41,12 @@ public class MachineDescServiceImpl extends ServiceImpl<MachineDescDao,MachineDe
 
     @Resource
     private MachineDescDao machineDescDao;
+
+    @Resource
+    private LogDescService logDescService;
+
+    @Resource
+    private RunPartService runPartService;
 
     @Override
     @Transactional(rollbackFor = Exception.class)
@@ -76,7 +84,7 @@ public class MachineDescServiceImpl extends ServiceImpl<MachineDescDao,MachineDe
      * @param machineRecordJsonModel
      * @param machineDescOld
      */
-    private void takeNotes(MachineRecordJsonModel machineRecordJsonModel, MachineDesc machineDescOld) {
+    public void takeNotes(MachineRecordJsonModel machineRecordJsonModel, MachineDesc machineDescOld) {
         // 横机设备操作模型初始化
         MachineModel machineModel = null;
         String machineName = machineDescOld.getMachineName();
@@ -163,9 +171,25 @@ public class MachineDescServiceImpl extends ServiceImpl<MachineDescDao,MachineDe
         if(null == machineModel){
             // todo-anly 发送异常信息给app端
             log.error(machineName+"当前的状态码不识别:"+machineRecordJsonModel.getMachineStatus());
+            return;
         }
-        // todo-anly 持久化数据
+        // 持久化数据
+        persistence(machineModel);
+    }
 
+    /**
+     * 持久化数据
+     */
+    public void persistence(MachineModel machineModel){
+        // 更新数据库中的数据
+        // 1、更新库中设备状态
+        updateById(machineModel.getMachineDesc());
+        // 2、添加库中事件记录
+        logDescService.saveBatch(machineModel.getLogDescList());
+        // 3、修改运行时间段
+        runPartService.saveOrUpdate(machineModel.getRunPart());
+        // 4、修改缓存中的心跳时间和机器设备状态
+        machineModel.updateMachineMap();
     }
 
     /**
