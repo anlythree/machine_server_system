@@ -1,5 +1,7 @@
 package top.anly.business.log.domain;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -18,6 +20,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class LogDesc {
 
+    @TableId(type= IdType.AUTO)
     private Integer id;
 
     private String logType;
@@ -39,5 +42,6 @@ public class LogDesc {
         this.logType = logType;
         this.machineId = machineDesc.getId();
         this.machineName = machineDesc.getMachineName();
+        this.gmtCreate = LocalDateTime.now();
     }
 }

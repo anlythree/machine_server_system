@@ -67,4 +67,15 @@ public interface MachineDescService extends IService<MachineDesc> {
      */
     void setMachineDescMap(String key,MachineStatusModel value);
 
+
+    /**
+     * 开启或关闭离线检测
+     * @return
+     */
+    String openOrCloseOnlineCheck();
+
+    /**
+     * 删掉log和运行时间段记录
+     */
+    void deleteLogAndRunPart();
 }

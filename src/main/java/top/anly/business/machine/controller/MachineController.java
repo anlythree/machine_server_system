@@ -65,4 +65,31 @@ public class MachineController {
         return Result.ok(machineDescService.manualCacheMachineInfo());
     }
 
+    /**
+     * 关闭/开启离线检测
+     *
+     * @param
+     * @return
+     */
+    @ApiOperation("关闭/开启离线检测")
+    @RequestMapping("/openOrCloseOnlineCheck")
+    @ResponseBody
+    public Result openOrCloseOnlineCheck() {
+        return Result.ok(machineDescService.openOrCloseOnlineCheck());
+    }
+
+    /**
+     * 删掉所有记录
+     *
+     * @param
+     * @return
+     */
+    @ApiOperation("删掉所有记录")
+    @RequestMapping("/deleteLogAndRunPart")
+    @ResponseBody
+    public Result deleteLogAndRunPart() {
+        machineDescService.deleteLogAndRunPart();
+        return Result.ok("删除所有记录成功!!");
+    }
+
 }

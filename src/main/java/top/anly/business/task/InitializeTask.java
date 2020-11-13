@@ -32,9 +32,11 @@ public class InitializeTask {
 
     @Autowired
     private MachineDescService machineDescService;
-
+    
     @Autowired
     private RunPartService runPartService;
+
+    public static Boolean IS_ChECK = true;
 
     /**
      * 离线检测
@@ -43,6 +45,9 @@ public class InitializeTask {
     @Transactional(rollbackFor = Exception.class)
     @Scheduled(cron = "0/10 * * * * ?")
     public void updateAllContractStatus() {
+        if(!IS_ChECK){
+            return;
+        }
         log.info("机械设备离线心跳检查");
         // 遍历map
         Map<String, MachineStatusModel> machineDescMap = machineDescService.getMachineDescMap();

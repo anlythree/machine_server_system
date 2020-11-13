@@ -72,10 +72,10 @@ public class PushCallback implements MqttCallback {
 //            log.info(reciveMsg);
             ThreadPoolExecutor executor = ThreadPoolService.getInstance();
             MessageThread reciveThread = new MessageThread(/*reciveMsg,*/ topic, message);
-            log.info(executor.hashCode() + "");
+//            log.info(executor.hashCode() + "");
             executor.execute(reciveThread);
-            log.info("线程池中线程数目：" + executor.getPoolSize() + "，队列中等待执行的任务数目：" +
-                    executor.getQueue().size() + "，已执行完别的任务数目：" + executor.getCompletedTaskCount());
+//            log.info("线程池中线程数目：" + executor.getPoolSize() + "，队列中等待执行的任务数目：" +
+//                    executor.getQueue().size() + "，已执行完别的任务数目：" + executor.getCompletedTaskCount());
         } catch (Exception e) {
             e.printStackTrace();
         }

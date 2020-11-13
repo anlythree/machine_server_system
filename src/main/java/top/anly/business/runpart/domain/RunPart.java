@@ -1,5 +1,7 @@
 package top.anly.business.runpart.domain;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -18,6 +20,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class RunPart {
 
+    @TableId(type= IdType.AUTO)
     private Integer id;
 
     private BigDecimal duration;
@@ -62,7 +65,7 @@ public class RunPart {
         this.gmtModified = endTime;
         // 计算运行时间
         Duration between = Duration.between(startTime, endTime);
-        this.duration = new BigDecimal(between.toMinutes());
+        this.duration = new BigDecimal(between.toMillis());
     }
 
 }
