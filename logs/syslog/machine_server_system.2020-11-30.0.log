@@ -1,0 +1,656 @@
+2020-11-30 17:46:11,666 INFO (StartupInfoLogger.java:50)- Starting MachineServerSystemApplication on DESKTOP-ANC07SR with PID 12840 (F:\my\machine\machine_server_system\target\classes started by 24501 in F:\my\machine\machine_server_system)
+2020-11-30 17:46:11,673 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-11-30 17:46:13,374 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c59b783] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-30 17:46:13,832 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8001 (http)
+2020-11-30 17:46:13,866 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-30 17:46:13,893 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-11-30 17:46:13,893 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-11-30 17:46:13,901 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [G:\jdk1.8.0_192\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;G:\jdk1.8.0_192\bin;G:\jdk1.8.0_192\jre\bin;G:\Git\cmd;G:\Git\bin;G:\Git\mingw64\libexec\git-core;G:\nodejs\;C:\Program Files\nodejs\node_global;G:\maven\apache-maven-3.6.3\bin;G:\gradle-6.5.1\bin;G:\redis\;C:\Users\24501\AppData\Local\Microsoft\WindowsApps;;G:\Microsoft VS Code\bin;C:\Users\24501\AppData\Roaming\npm;G:\fiddler;.]
+2020-11-30 17:46:14,019 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-11-30 17:46:14,020 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 2274 ms
+2020-11-30 17:46:14,577 INFO (DruidDataSource.java:914)- {dataSource-1} inited
+2020-11-30 17:46:16,718 ERROR (DruidDataSource.java:2280)- create connection error, url: jdbc:postgresql://localhost:5432/postgres?serverTimeZone=Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08001
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2277)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 7 common frames omitted
+2020-11-30 17:46:18,731 ERROR (DruidDataSource.java:2280)- create connection error, url: jdbc:postgresql://localhost:5432/postgres?serverTimeZone=Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08001
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2277)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 7 common frames omitted
+2020-11-30 17:46:20,743 ERROR (DruidDataSource.java:2280)- create connection error, url: jdbc:postgresql://localhost:5432/postgres?serverTimeZone=Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08001
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2277)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 7 common frames omitted
+2020-11-30 17:46:22,758 ERROR (DruidDataSource.java:2280)- create connection error, url: jdbc:postgresql://localhost:5432/postgres?serverTimeZone=Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08001
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2277)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 7 common frames omitted
+2020-11-30 17:46:24,773 ERROR (DruidDataSource.java:2280)- create connection error, url: jdbc:postgresql://localhost:5432/postgres?serverTimeZone=Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08001
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2277)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 7 common frames omitted
+2020-11-30 17:46:26,786 ERROR (DruidDataSource.java:2280)- create connection error, url: jdbc:postgresql://localhost:5432/postgres?serverTimeZone=Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08001
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2277)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 7 common frames omitted
+2020-11-30 17:46:28,801 ERROR (DruidDataSource.java:2280)- create connection error, url: jdbc:postgresql://localhost:5432/postgres?serverTimeZone=Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08001
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2277)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 7 common frames omitted
+2020-11-30 17:46:30,837 ERROR (DruidDataSource.java:2280)- create connection error, url: jdbc:postgresql://localhost:5432/postgres?serverTimeZone=Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08001
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2277)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 7 common frames omitted
+2020-11-30 17:46:32,842 ERROR (DruidDataSource.java:2280)- create connection error, url: jdbc:postgresql://localhost:5432/postgres?serverTimeZone=Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08001
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2277)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 7 common frames omitted
+2020-11-30 17:46:34,855 ERROR (DruidDataSource.java:2280)- create connection error, url: jdbc:postgresql://localhost:5432/postgres?serverTimeZone=Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08001
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2277)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 7 common frames omitted
+2020-11-30 17:46:36,870 ERROR (DruidDataSource.java:2280)- create connection error, url: jdbc:postgresql://localhost:5432/postgres?serverTimeZone=Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08001
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2277)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 7 common frames omitted
+2020-11-30 17:46:38,899 ERROR (DruidDataSource.java:2280)- create connection error, url: jdbc:postgresql://localhost:5432/postgres?serverTimeZone=Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08001
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2277)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 7 common frames omitted
+2020-11-30 17:46:40,911 ERROR (DruidDataSource.java:2280)- create connection error, url: jdbc:postgresql://localhost:5432/postgres?serverTimeZone=Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08001
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2277)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 7 common frames omitted
+2020-11-30 17:46:42,925 ERROR (DruidDataSource.java:2280)- create connection error, url: jdbc:postgresql://localhost:5432/postgres?serverTimeZone=Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08001
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2277)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 7 common frames omitted
+2020-11-30 17:46:44,938 ERROR (DruidDataSource.java:2280)- create connection error, url: jdbc:postgresql://localhost:5432/postgres?serverTimeZone=Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08001
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2277)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 7 common frames omitted
+2020-11-30 17:46:50,317 INFO (StartupInfoLogger.java:50)- Starting MachineServerSystemApplication on DESKTOP-ANC07SR with PID 18072 (F:\my\machine\machine_server_system\target\classes started by 24501 in F:\my\machine\machine_server_system)
+2020-11-30 17:46:50,320 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-11-30 17:46:51,357 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fb648d45] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-30 17:46:51,640 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8001 (http)
+2020-11-30 17:46:51,659 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-30 17:46:51,670 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-11-30 17:46:51,670 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-11-30 17:46:51,680 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [G:\jdk1.8.0_192\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;G:\jdk1.8.0_192\bin;G:\jdk1.8.0_192\jre\bin;G:\Git\cmd;G:\Git\bin;G:\Git\mingw64\libexec\git-core;G:\nodejs\;C:\Program Files\nodejs\node_global;G:\maven\apache-maven-3.6.3\bin;G:\gradle-6.5.1\bin;G:\redis\;C:\Users\24501\AppData\Local\Microsoft\WindowsApps;;G:\Microsoft VS Code\bin;C:\Users\24501\AppData\Roaming\npm;G:\fiddler;.]
+2020-11-30 17:46:51,792 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-11-30 17:46:51,793 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1424 ms
+2020-11-30 17:46:52,037 INFO (DruidDataSource.java:914)- {dataSource-1} inited
+2020-11-30 17:47:25,818 INFO (StartupInfoLogger.java:50)- Starting MachineServerSystemApplication on DESKTOP-ANC07SR with PID 11456 (F:\my\machine\machine_server_system\target\classes started by 24501 in F:\my\machine\machine_server_system)
+2020-11-30 17:47:25,821 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-11-30 17:47:26,751 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$30510d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-30 17:47:26,995 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8001 (http)
+2020-11-30 17:47:27,005 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-30 17:47:27,011 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-11-30 17:47:27,011 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-11-30 17:47:27,017 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [G:\jdk1.8.0_192\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;G:\jdk1.8.0_192\bin;G:\jdk1.8.0_192\jre\bin;G:\Git\cmd;G:\Git\bin;G:\Git\mingw64\libexec\git-core;G:\nodejs\;C:\Program Files\nodejs\node_global;G:\maven\apache-maven-3.6.3\bin;G:\gradle-6.5.1\bin;G:\redis\;C:\Users\24501\AppData\Local\Microsoft\WindowsApps;;G:\Microsoft VS Code\bin;C:\Users\24501\AppData\Roaming\npm;G:\fiddler;.]
+2020-11-30 17:47:27,114 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-11-30 17:47:27,114 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1247 ms
+2020-11-30 17:47:27,337 INFO (DruidDataSource.java:914)- {dataSource-1} inited
+2020-11-30 17:47:28,922 WARN (MqttConnect.java:56)- ------MQTT服务器连接成功
+2020-11-30 17:47:29,029 WARN (MqttConnect.java:59)- ------开始订阅主题:anly/machine/#
+2020-11-30 17:47:29,304 INFO (PropertySourcedRequestMappingHandlerMapping.java:69)- Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-11-30 17:47:29,415 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-30 17:47:29,564 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'taskScheduler'
+2020-11-30 17:47:29,615 INFO (DocumentationPluginsBootstrapper.java:160)- Context refreshed
+2020-11-30 17:47:29,635 INFO (DocumentationPluginsBootstrapper.java:163)- Found 1 custom documentation plugin(s)
+2020-11-30 17:47:29,664 INFO (ApiListingReferenceScanner.java:41)- Scanning for api listing references
+2020-11-30 17:47:29,823 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8001"]
+2020-11-30 17:47:29,834 ERROR (DirectJDKLog.java:175)- Failed to start component [Connector[HTTP/1.1-8001]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at top.anly.MachineServerSystemApplication.main(MachineServerSystemApplication.java:28)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1085)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1171)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2020-11-30 17:47:29,839 INFO (DirectJDKLog.java:173)- Pausing ProtocolHandler ["http-nio-8001"]
+2020-11-30 17:47:29,839 INFO (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2020-11-30 17:47:29,844 INFO (DirectJDKLog.java:173)- The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2020-11-30 17:47:29,845 INFO (DirectJDKLog.java:173)- Stopping ProtocolHandler ["http-nio-8001"]
+2020-11-30 17:47:29,845 INFO (DirectJDKLog.java:173)- Destroying ProtocolHandler ["http-nio-8001"]
+2020-11-30 17:47:29,847 INFO (ConditionEvaluationReportLoggingListener.java:142)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-30 17:47:29,851 ERROR (LoggingFailureAnalysisReporter.java:42)- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8001 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8001, or configure this application to listen on another port.
+
+2020-11-30 17:47:29,853 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'taskScheduler'
+2020-11-30 17:47:29,854 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-30 17:47:29,857 INFO (DruidDataSource.java:1689)- {dataSource-1} closed
+2020-11-30 17:49:27,668 INFO (StartupInfoLogger.java:50)- Starting MachineServerSystemApplication on DESKTOP-ANC07SR with PID 12028 (F:\my\machine\machine_server_system\target\classes started by 24501 in F:\my\machine\machine_server_system)
+2020-11-30 17:49:27,671 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-11-30 17:49:28,710 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$93bd22a5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-30 17:49:28,974 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8001 (http)
+2020-11-30 17:49:28,984 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-30 17:49:28,991 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-11-30 17:49:28,992 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-11-30 17:49:28,997 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [G:\jdk1.8.0_192\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;G:\jdk1.8.0_192\bin;G:\jdk1.8.0_192\jre\bin;G:\Git\cmd;G:\Git\bin;G:\Git\mingw64\libexec\git-core;G:\nodejs\;C:\Program Files\nodejs\node_global;G:\maven\apache-maven-3.6.3\bin;G:\gradle-6.5.1\bin;G:\redis\;C:\Users\24501\AppData\Local\Microsoft\WindowsApps;;G:\Microsoft VS Code\bin;C:\Users\24501\AppData\Roaming\npm;G:\fiddler;.]
+2020-11-30 17:49:29,100 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-11-30 17:49:29,101 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1379 ms
+2020-11-30 17:49:29,348 INFO (DruidDataSource.java:914)- {dataSource-1} inited
+2020-11-30 17:49:30,379 WARN (MqttConnect.java:56)- ------MQTT服务器连接成功
+2020-11-30 17:49:30,440 WARN (MqttConnect.java:59)- ------开始订阅主题:anly/machine/#
+2020-11-30 17:49:30,754 INFO (PropertySourcedRequestMappingHandlerMapping.java:69)- Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-11-30 17:49:30,870 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-30 17:49:31,002 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'taskScheduler'
+2020-11-30 17:49:31,052 INFO (DocumentationPluginsBootstrapper.java:160)- Context refreshed
+2020-11-30 17:49:31,066 INFO (DocumentationPluginsBootstrapper.java:163)- Found 1 custom documentation plugin(s)
+2020-11-30 17:49:31,097 INFO (ApiListingReferenceScanner.java:41)- Scanning for api listing references
+2020-11-30 17:49:31,214 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8001"]
+2020-11-30 17:49:31,239 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-30 17:49:31,242 INFO (StartupInfoLogger.java:59)- Started MachineServerSystemApplication in 3.942 seconds (JVM running for 5.032)
+2020-11-30 17:49:31,367 INFO (MachineDescServiceImpl.java:247)- 所有设备信息已缓存至map中
+2020-11-30 17:49:31,367 INFO (MachineDescServiceImpl.java:248)- map内容:{南左=MachineStatusModel(machineStatus=4, lastHeartTime=2020-11-30T17:49:31.366), 北左=MachineStatusModel(machineStatus=4, lastHeartTime=2020-11-30T17:49:31.366), 南右=MachineStatusModel(machineStatus=4, lastHeartTime=2020-11-30T17:49:31.366), 北右=MachineStatusModel(machineStatus=4, lastHeartTime=2020-11-30T17:49:31.367)}
+2020-11-30 17:49:33,785 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-30 17:49:33,786 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2020-11-30 17:49:33,792 INFO (FrameworkServlet.java:546)- Completed initialization in 6 ms
+2020-11-30 17:49:40,016 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:49:40,125 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:49:50,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:49:50,062 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:50:00,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:50:00,062 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:50:10,000 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:50:10,062 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:50:20,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:50:20,063 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:50:30,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:50:30,062 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:50:40,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:50:40,063 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:50:50,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:50:50,062 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:51:00,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:51:00,061 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:51:10,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:51:10,063 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:51:20,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:51:20,063 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:51:30,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:51:30,064 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:51:40,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:51:40,065 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:51:50,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:51:50,066 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:52:00,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:52:00,066 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:52:10,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:52:10,068 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:52:20,003 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:52:20,066 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:52:30,003 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:52:30,064 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:52:40,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:52:40,061 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:52:50,000 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:52:50,061 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:53:00,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:53:00,065 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:53:10,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:53:10,061 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:53:20,003 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:53:20,064 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:53:30,003 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:53:30,063 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:53:40,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:53:40,062 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:53:50,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:53:50,060 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:54:00,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:54:00,060 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:54:10,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:54:10,062 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:54:20,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:54:20,061 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:54:30,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:54:30,062 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:54:40,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:54:40,063 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:54:50,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:54:50,061 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:55:00,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:55:00,061 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:55:10,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:55:10,063 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:55:20,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:55:20,061 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:55:30,003 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:55:30,062 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:55:40,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:55:40,063 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:55:50,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:55:50,064 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:56:00,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:56:00,063 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:56:10,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:56:10,061 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:56:20,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:56:20,062 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:56:30,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:56:30,062 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:56:40,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:56:40,061 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:56:50,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:56:50,061 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:57:00,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:57:00,069 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:57:10,000 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:57:10,061 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:57:20,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:57:20,061 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:57:30,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:57:30,061 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:57:40,000 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:57:40,061 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:57:50,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:57:50,062 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:58:00,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:58:00,063 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:58:10,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:58:10,064 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:58:20,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:58:20,063 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:58:30,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:58:30,083 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:58:40,000 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:58:40,064 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:58:50,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:58:50,064 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:59:00,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:59:00,063 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:59:10,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:59:10,063 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:59:20,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:59:20,073 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:59:30,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:59:30,062 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:59:40,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:59:40,064 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 17:59:50,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 17:59:50,062 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:00:00,000 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:00:00,059 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:00:10,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:00:10,063 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:00:20,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:00:20,061 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:00:30,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:00:30,060 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:00:40,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:00:40,061 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:00:50,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:00:50,063 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:01:00,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:01:00,085 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:01:10,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:01:10,062 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:01:20,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:01:20,062 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:01:30,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:01:30,062 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:01:40,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:01:40,069 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:01:50,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:01:50,064 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:02:00,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:02:00,065 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:02:10,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:02:10,062 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:02:20,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:02:20,064 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:02:30,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:02:30,063 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:02:40,000 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:02:40,062 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:02:50,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:02:50,061 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:03:00,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:03:00,063 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:03:10,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:03:10,062 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:03:20,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:03:20,062 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:03:30,000 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:03:30,060 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:03:40,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:03:40,075 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:03:50,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:03:50,060 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:04:00,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:04:00,065 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:04:10,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:04:10,065 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:04:20,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:04:20,060 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:04:30,001 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:04:30,061 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:04:40,000 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:04:40,059 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:04:50,002 INFO (InitializeTask.java:51)- 机械设备离线心跳检查
+2020-11-30 18:04:50,062 INFO (InitializeTask.java:82)- [南左, 北左, 南右, 北右]被设置为离线
+2020-11-30 18:04:59,992 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'taskScheduler'
+2020-11-30 18:04:59,994 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-30 18:04:59,998 INFO (DruidDataSource.java:1689)- {dataSource-1} closed

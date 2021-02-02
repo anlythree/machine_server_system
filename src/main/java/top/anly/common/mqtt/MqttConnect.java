@@ -27,8 +27,8 @@ public class MqttConnect {
     /**
      * MQTT服务
      */
-    public static String HOST = "tcp://localhost:1883";//prd
-//    public static String HOST = "tcp://103.72.146.31:1883";//dev
+//    public static String HOST = "tcp://localhost:1883";//prd
+    public static String HOST = "tcp://103.72.146.31:1883";//dev
 
 
     /**

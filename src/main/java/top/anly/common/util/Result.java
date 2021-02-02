@@ -6,7 +6,7 @@ import top.anly.exception.AppError;
 /**
  * 自定义响应结构
  *
- * @author zhenhua.huo
+ * @author anlythree
  * @date 2019年4月24日
  */
 @Data

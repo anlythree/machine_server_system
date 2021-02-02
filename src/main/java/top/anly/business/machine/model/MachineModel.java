@@ -43,8 +43,8 @@ public class MachineModel {
      * 更新缓存中的状态和时间
      */
     public void updateMachineMap() {
-        MachineDescServiceImpl.machineDescMap.put(this.getMachineDesc().getMachineName(),
-                new MachineStatusModel(this.getMachineDesc().getMachineStatus(), LocalDateTime.now()));
+        MachineDescServiceImpl.machineDescMap.put(getMachineDesc().getMachineName(),
+                new MachineStatusModel(getMachineDesc().getMachineStatus(), LocalDateTime.now()));
     }
 
     /**
@@ -55,8 +55,8 @@ public class MachineModel {
         this.machineDesc = machineDesc;
         // 大多数情况是一条记录，一条运行时间段记录
         logDescList = new ArrayList<>(1);
-        this.machineDescService= SpringContextBeanService.getBean(MachineDescServiceImpl.class);
-        this.runPartService = SpringContextBeanService.getBean(RunPartServiceImpl.class);
+        machineDescService= SpringContextBeanService.getBean(MachineDescServiceImpl.class);
+        runPartService = SpringContextBeanService.getBean(RunPartServiceImpl.class);
     }
 
 
@@ -66,9 +66,11 @@ public class MachineModel {
      */
     public MachineModel openMachine(){
         // 修改状态为暂停
-        this.getMachineDesc().setMachineStatus(MachineDescStatusEnum.PENDING.getStatusNum());
+        getMachineDesc().setMachineStatus(MachineDescStatusEnum.PENDING.getStatusNum());
+        getMachineDesc().setGmtModified(LocalDateTime.now());
+        getMachineDesc().setMachineOpenTime(LocalDateTime.now());
         // 添加一条开机记录
-        this.getLogDescList().add(new LogDesc(this.getMachineDesc(),"开机"));
+        getLogDescList().add(new LogDesc(getMachineDesc(),"开机"));
         return this;
     }
 
@@ -79,9 +81,10 @@ public class MachineModel {
      */
     public MachineModel closeMachine(){
         // 修改状态为关机状态
-        this.getMachineDesc().setMachineStatus(MachineDescStatusEnum.SHUT_DOWN.getStatusNum());
+        getMachineDesc().setMachineStatus(MachineDescStatusEnum.SHUT_DOWN.getStatusNum());
+        getMachineDesc().setGmtModified(LocalDateTime.now());
         // 添加一条关机记录
-        this.getLogDescList().add(new LogDesc(this.getMachineDesc(),"关机"));
+        getLogDescList().add(new LogDesc(getMachineDesc(),"关机"));
         return this;
     }
 
@@ -92,11 +95,12 @@ public class MachineModel {
      */
     public MachineModel startRun(){
         // 修改状态为运行状态
-        this.getMachineDesc().setMachineStatus(MachineDescStatusEnum.RUNNING.getStatusNum());
+        getMachineDesc().setMachineStatus(MachineDescStatusEnum.RUNNING.getStatusNum());
+        getMachineDesc().setGmtModified(LocalDateTime.now());
         // 添加一条开始运行记录
-        this.getLogDescList().add(new LogDesc(this.getMachineDesc(),"开始运行"));
+        getLogDescList().add(new LogDesc(getMachineDesc(),"开始运行"));
         // 添加一条时间段记录
-        this.setRunPart(new RunPart(this.getMachineDesc()));
+        setRunPart(new RunPart(getMachineDesc()));
         return this;
     }
 
@@ -106,18 +110,19 @@ public class MachineModel {
      */
     public MachineModel stopRun(){
         // 修改状态为暂停状态
-        this.getMachineDesc().setMachineStatus(MachineDescStatusEnum.PENDING.getStatusNum());
+        getMachineDesc().setMachineStatus(MachineDescStatusEnum.PENDING.getStatusNum());
+        getMachineDesc().setGmtModified(LocalDateTime.now());
         // 添加一条运行记录
-        this.getLogDescList().add(new LogDesc(this.getMachineDesc(),"运行结束"));
+        getLogDescList().add(new LogDesc(getMachineDesc(),"运行结束"));
         // 查询原来的运行时间段记录
         LambdaQueryWrapper<RunPart> runPartLambdaQueryWrapper = Wrappers.lambdaQuery();
-        runPartLambdaQueryWrapper.eq(RunPart::getMachineId,this.getMachineDesc().getId())
+        runPartLambdaQueryWrapper.eq(RunPart::getMachineId,getMachineDesc().getId())
                 .isNull(RunPart::getEndTime)
                 .orderByDesc(RunPart::getStartTime)
                 .last("limit 1;");
         RunPart runPartStart = runPartService.getOne(runPartLambdaQueryWrapper);
         // 添加原运行时间段的结束日期和使用时间段
-        this.setRunPart(new RunPart(runPartStart));
+        setRunPart(new RunPart(runPartStart));
         return this;
     }
 
@@ -127,9 +132,10 @@ public class MachineModel {
      */
     public MachineModel startError(){
         // 修改状态为报警状态
-        this.getMachineDesc().setMachineStatus(MachineDescStatusEnum.ERROR.getStatusNum());
+        getMachineDesc().setMachineStatus(MachineDescStatusEnum.ERROR.getStatusNum());
+        getMachineDesc().setGmtModified(LocalDateTime.now());
         // 添加一条运行记录
-        this.getLogDescList().add(new LogDesc(this.getMachineDesc(),"开始报警"));
+        getLogDescList().add(new LogDesc(getMachineDesc(),"开始报警"));
         return this;
     }
 
@@ -139,9 +145,10 @@ public class MachineModel {
      */
     public MachineModel stopError(){
         // 修改状态为暂停状态
-        this.getMachineDesc().setMachineStatus(MachineDescStatusEnum.PENDING.getStatusNum());
+        getMachineDesc().setMachineStatus(MachineDescStatusEnum.PENDING.getStatusNum());
+        getMachineDesc().setGmtModified(LocalDateTime.now());
         // 添加一条运行记录
-        this.getLogDescList().add(new LogDesc(this.getMachineDesc(),"报警结束"));
+        getLogDescList().add(new LogDesc(getMachineDesc(),"报警结束"));
         return this;
     }
 
@@ -151,9 +158,10 @@ public class MachineModel {
      */
     public MachineModel onLine(){
         // 修改状态为暂停状态
-        this.getMachineDesc().setMachineStatus(MachineDescStatusEnum.PENDING.getStatusNum());
+        getMachineDesc().setMachineStatus(MachineDescStatusEnum.PENDING.getStatusNum());
+        getMachineDesc().setGmtModified(LocalDateTime.now());
         // 添加一条运行记录
-        this.getLogDescList().add(new LogDesc(this.getMachineDesc(),"上线"));
+        getLogDescList().add(new LogDesc(getMachineDesc(),"上线"));
         return this;
     }
 
@@ -163,9 +171,10 @@ public class MachineModel {
      */
     public MachineModel offLine(){
         // 修改状态为暂停状态
-        this.getMachineDesc().setMachineStatus(MachineDescStatusEnum.NOT_ONLINE.getStatusNum());
+        getMachineDesc().setMachineStatus(MachineDescStatusEnum.NOT_ONLINE.getStatusNum());
+        getMachineDesc().setGmtModified(LocalDateTime.now());
         // 添加一条运行记录
-        this.getLogDescList().add(new LogDesc(this.getMachineDesc(),"离线"));
+        getLogDescList().add(new LogDesc(getMachineDesc(),"离线"));
         return this;
     }
 
